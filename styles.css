@@ -102,7 +102,7 @@ body{
     margin: 30px auto 0 auto; 
   }
 
-  .Info3{
+  .info3{
      position:absolute;
      left: 80px;
      font-size:36px;
@@ -111,23 +111,35 @@ body{
      margin-bottom: 90px;
       
   }
-   .sub3{
-     font-family: 'Kosugi';
-     position: absolute;
-     left:80px;
-     font-size: 32px;
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     display: flex;
-     flex-direction: column;
-     bottom: -1520px;
-     line-height: 1.05;  
-     margin: 0;                    
-     gap: 4px;  
-  }
-   .sub3 p {
-      margin: 0;
-      padding: 0;
-    }  
+   .course{
+    position: absolute;
+    left:80px;
+    font-size:32px;
+    font-family: 'Kosugi';
+    text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+    margin: 0;
+    padding: 0;
+   }
+
+   .school{
+    position: absolute;
+    left:80px;
+    font-size: 32px;
+    font-family: 'Kosugi';
+    text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+    margin: 0;
+    padding: 0;
+   }
+
+   .year{
+    position: absolute;
+    left:80px;
+    font-size: 32px;
+    font-family: 'Kosugi';
+    text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+    margin: 0;
+    padding: 0;
+   }
 
 
      .Info4{
