@@ -1,0 +1,228 @@
+body{
+    background:#F8F8FF;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+ }
+  .Title {
+     font-family: 'Karma';
+      position: relative;
+      font-size: 128px;
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      display: flex;
+      top: -5px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .intro h1 {
+      font-family: 'Kosugi Maru';
+      position: relative;
+      font-size: 64px;
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      display: flex;
+      bottom: -30px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .sub {
+      font-family: 'Kosugi';
+      position: relative;
+      font-size: 48px;
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      bottom: -30px;
+      text-align: center;
+      line-height: 1.05;  
+      margin: 0;                    
+      gap: 4px;   
+    }
+
+    .sub p {
+      margin: 0;
+      padding: 0;
+    }   
+
+    .info{
+        position:relative;
+        font-size:64px;
+        font-family:'Kosugi Maru';
+        text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+        display: flex;
+        bottom: -50px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .sub2{
+     font-family: 'Kosugi';
+      position: relative;
+      font-size: 48px;
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      bottom: -50px;
+      text-align: center;
+      line-height: 1.05;  
+      margin: 0;                    
+      gap: 4px;   
+    }
+
+     .sub2 p {
+      margin: 0;
+      padding: 0;
+    }  
+
+   .line {
+    width: 100%;
+    height: 3px;
+    background-color: #000000;
+    margin: 75px 0 24px 0;
+    border-radius: 2px;
+ 
+   }
+
+    .about{
+      position:relative;
+      font-size:64px;
+      font-family:'Kosugi Maru';
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      display: flex;
+      bottom: -70px;
+      justify-content: center;
+      text-align: center; 
+    }
+
+    .Me{
+    display: block;
+    margin: 30px auto 0 auto; 
+  }
+
+  .Info3{
+     position:absolute;
+     left: 80px;
+     font-size:36px;
+     font-family:'Kosugi Maru';
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+     margin-bottom: 90px;
+      
+  }
+   .sub3{
+     font-family: 'Kosugi';
+     position: absolute;
+     left:80px;
+     font-size: 32px;
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+     display: flex;
+     flex-direction: column;
+     bottom: -1520px;
+     line-height: 1.05;  
+     margin: 0;                    
+     gap: 4px;  
+  }
+   .sub3 p {
+      margin: 0;
+      padding: 0;
+    }  
+
+
+     .Info4{
+     position:absolute;
+     left: -7px;
+     top: 85px;
+     font-size:36px;
+     font-family:'Kosugi Maru';
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+    
+      
+  }
+   .sub4{
+     font-family: 'Kosugi';
+     position: absolute;
+     left:-7px;
+     top:240px;
+     font-size: 32px;
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+     display: flex;
+     flex-direction: column;
+     line-height: 1.05;  
+     margin: 0;                    
+     gap: 4px;  
+  }
+   .sub4 p{
+      margin: 0;
+      padding: 0;
+    }  
+   
+      .info5{
+     position:absolute;
+     right: -850px;
+     top: -175px;
+     font-size:36px;
+     font-family:'Kosugi Maru';
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+    }
+   .sub5{
+     font-family: 'Kosugi';
+     position: absolute;
+     right:-955px;
+     top:-15px;
+     font-size: 32px;
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+     display: flex;
+     flex-direction: column;
+     line-height: 1.05;  
+     margin: 0;                    
+     gap: 4px;  
+  }
+   .sub5 p{
+      margin: 0;
+      padding: 0;
+    }  
+
+     .info6{
+     position:absolute;
+     right: -850px;
+     bottom: -120px;
+     font-size:36px;
+     font-family:'Kosugi Maru';
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+    }
+   .sub6{
+     font-family: 'Kosugi';
+     position: absolute;
+     right:-1065px;
+     bottom:-260px;
+     font-size: 32px;
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+     display: flex;
+     flex-direction: column;
+     line-height: 1.05;  
+     margin: 0;                    
+     gap: 4px;  
+  }
+   .sub6 p{
+      margin: 0;
+      padding: 0;
+    }  
+
+    
+
+    
+  
+
+    
+
+ 
+    
+
+    
+
+
+    
+
+ 
