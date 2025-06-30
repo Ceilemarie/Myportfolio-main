@@ -210,7 +210,7 @@ body{
     }
 
      .ach{
-  
+      position:static;
       font-family: 'Kosugi Maru';
       font-size: 36px;
       margin-right:80px;
