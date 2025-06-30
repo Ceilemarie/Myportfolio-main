@@ -26,7 +26,7 @@ body{
       text-align: center;
     }
 
-    .sub {
+    .sub{
       font-family: 'Kosugi';
       position: relative;
       font-size: 48px;
@@ -102,125 +102,131 @@ body{
     margin: 30px auto 0 auto; 
   }
 
-  .info3{
-     position:absolute;
-     left: 80px;
+  .education{
+     position:static;
+     margin-left:-1030px;
+     font-size:36px;
+     font-family:'Kosugi Maru';
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+     margin-bottom: -15px;
+      
+  }
+    .sub3{
+     font-family: 'Kosugi';
+     position: static;
+     margin-left:85px;
+     font-size: 32px;
+     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+     display: flex;
+     flex-direction: column;
+     line-height: 1.05;                   
+     gap: 4px;  
+     margin-bottom:60px;
+  }
+   .sub3 p {
+      margin: 0;
+      padding: 0;
+    }  
+
+
+     .softwares{
+     position:static;
+     margin-left: -1030px;
      font-size:36px;
      font-family:'Kosugi Maru';
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
      margin-bottom: 90px;
       
   }
-   .course{
-    position: absolute;
-    left:80px;
-    font-size:32px;
-    font-family: 'Kosugi';
-    text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-    margin: 0;
-    padding: 0;
-   }
-
-   .school{
-    position: absolute;
-    left:80px;
-    font-size: 32px;
-    font-family: 'Kosugi';
-    text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-    margin: 0;
-    padding: 0;
-   }
-
-   .year{
-    position: absolute;
-    left:80px;
-    font-size: 32px;
-    font-family: 'Kosugi';
-    text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-    margin: 0;
-    padding: 0;
-   }
-
-
-     .Info4{
-     position:absolute;
-     left: -7px;
-     top: 85px;
-     font-size:36px;
-     font-family:'Kosugi Maru';
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-    
-      
-  }
    .sub4{
      font-family: 'Kosugi';
-     position: absolute;
-     left:-7px;
-     top:240px;
+     position:static;
+     margin-left:85px;
+     margin-bottom: 100px;
      font-size: 32px;
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
      display: flex;
      flex-direction: column;
-     line-height: 1.05;  
-     margin: 0;                    
+     line-height: 1.05;                      
      gap: 4px;  
   }
    .sub4 p{
       margin: 0;
       padding: 0;
     }  
-   
-      .info5{
-     position:absolute;
-     right: -850px;
-     top: -175px;
-     font-size:36px;
-     font-family:'Kosugi Maru';
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+
+    .language{
+      font-family:'Kosugi Maru';
+      font-size:36px;
+      position:static;
+      margin-left:-1030px;
+      bottom:-1920px;
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
     }
-   .sub5{
-     font-family: 'Kosugi';
-     position: absolute;
-     right:-955px;
-     top:-15px;
-     font-size: 32px;
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     display: flex;
-     flex-direction: column;
-     line-height: 1.05;  
-     margin: 0;                    
-     gap: 4px;  
-  }
+
+    .sub5{
+      font-family:'Kosugi';
+      font-size: 32px;
+      position:static;
+      margin-left:85px;
+      bottom: -1990px;
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;                      
+      gap: 4px;  
+   }
    .sub5 p{
       margin: 0;
       padding: 0;
-    }  
-
-     .info6{
-     position:absolute;
-     right: -850px;
-     bottom: -120px;
-     font-size:36px;
-     font-family:'Kosugi Maru';
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+    } 
+    
+   .exp{
+      position:static;
+      font-family:'Kosugi Maru';
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      font-size:36px;
+      text-align: right;
+      margin-right:-500px;
+      margin-top: -950px;      
     }
-   .sub6{
-     font-family: 'Kosugi';
-     position: absolute;
-     right:-1065px;
-     bottom:-260px;
-     font-size: 32px;
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     display: flex;
-     flex-direction: column;
-     line-height: 1.05;  
-     margin: 0;                    
-     gap: 4px;  
-  }
-   .sub6 p{
-      margin: 0;
-      padding: 0;
-    }  
+
+    .sub6{
+      font-family:'Kosugi';
+      font-size: 32px;
+      position:relative;
+      right: -750px;
+      margin-bottom: -500px;
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      display: flex;
+      flex-direction: column;
+      line-height: 1.05;                  
+      gap: 4px; 
+    }
+
+    .sub6 p{
+      margin:0;
+      padding:0;
+    }
+
+     .ach{
+      position:static;
+      font-family: 'Kosugi Maru';
+      font-size: 36px;
+      margin-right:-500px;
+      margin-bottom: -100px; 
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+    }
+
+   
+
+   
+
+   
+    
+    
+   
+     
 
     
 
