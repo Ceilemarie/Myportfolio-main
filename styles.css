@@ -4,60 +4,149 @@
 
 body, html {
   overflow-x: hidden !important;
+  overflow-y: auto !important;
+  margin: 0;
+  padding: 0;
 }
 
 .aboutc-content {
     left: 0;
     right: 0;
     position: relative;
+    background: transparent !important;
+    box-shadow: none !important;
 }
 
-/* sample effect */
-
-.text-hover-wrap {
+.shape-hover-wrapper {
   position: relative;
   display: inline-block;
-  cursor: pointer;
 }
 
 .hover-text {
-  transition: opacity 0.4s ease;
-  position: relative;
+  font-size: 128px;
+  font-weight: bold;
+  color: #000;
+  transition: color 0.3s ease;
   z-index: 2;
-  color: black;
+  position: relative;
 }
 
-.hover-canvas {
+.hover-shape {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 1;
-  display: none;
+  top: 50%;
+  left: 50%;
+  width: 200px;
+  height: 200px;
+  transform: translate(-50%, -50%);
+  opacity: 0;
   pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1;
 }
 
-/* sample effect */
+
+body.darkmode {
+  background: #181A20 !important; /* true dark background */
+  color: #F8F8FF !important; /* light text */
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html.darkmode {
+  background: #181A20 !important;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body.darkmode .aboutc,
+body.darkmode .aboutc-content {
+  background: #23263A !important; /* dark section background */
+  color: #F8F8FF !important;
+}
+
+body.darkmode h1,
+body.darkmode h2,
+body.darkmode h3,
+body.darkmode p,
+body.darkmode .Title,
+body.darkmode .sub,
+body.darkmode .sub2,
+body.darkmode .sub3,
+body.darkmode .sub4,
+body.darkmode .sub5,
+body.darkmode .sub6,
+body.darkmode .sub7,
+body.darkmode .info,
+body.darkmode .About {
+  color: #F8F8FF !important;
+  text-shadow: 2px 2px 8px #000A !important;
+}
+
+body.darkmode .line {
+  background-color: #F8F8FF !important;
+}
+
+body.darkmode .project-card {
+  background: #23263A !important;
+  color: #F8F8FF !important;
+  box-shadow: 0 0 20px rgba(0,0,0,0.7);
+}
+
+body.darkmode .project-card h2 {
+  color: #F8F8FF !important;
+}
+
+body.darkmode .socmed24,
+body.darkmode .Projects {
+  background: #181A20 !important;
+  color: #F8F8FF !important;
+}
+
+body.darkmode .socmed24 h1,
+body.darkmode .Projects h1 {
+  color: #F8F8FF !important;
+}
+
+body.darkmode .hover-text {
+  color: #F8F8FF !important;
+}
+
+body.darkmode ::-webkit-scrollbar {
+  background: #23263A;
+}
+body.darkmode ::-webkit-scrollbar-thumb {
+  background: #484852;
+}
+body.darkmode ::selection {
+  background: #484852;
+  color: #F8F8FF;
+}
+
+/* End dark mode fixes */
 
 .aboutc{
-    background:#F8F8FF;
+    background:#4D49FC;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     min-height: 100vh; /* Ensures section is at least full viewport height, but grows with content */
     position: relative;
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
 }
  
   .Title {
-      font-family: 'Karma';
+      font-family: 'Great Vibes', cursive;
       position: relative;
-      font-size: 128px;
+      font-size: 160px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
-      top: -5px;
+      top: 16px;
       justify-content: center;
       text-align: center;
+      background: transparent !important;
+      box-shadow: none !important;
     }
 
     .intro h1 {
@@ -93,7 +182,7 @@ body, html {
 
     .info{
         position:relative;
-        font-size:64px;
+        font-size:44px;
         font-family:'Kosugi Maru';
         text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
         display: flex;
@@ -131,23 +220,21 @@ body, html {
  
    }
 
-    .about{
-      position:relative;
-      font-size:64px;
-      font-family:'Kosugi Maru';
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      bottom: -70px;
-      justify-content: center;
-      text-align: center; 
-    }
-
+    
     .About {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+      position: relative;
+      font-size: 44px;
+      font-family: 'Kosugi Maru';
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      text-align: center;
+      margin-bottom: 24px;
     }
+
+   
 
     .Me{
       display: block;
@@ -201,25 +288,26 @@ body, html {
 
 
      .softwares{
-     position:static;
-     margin-left: -1030px;
-     font-size:36px;
-     font-family:'Kosugi Maru';
+     margin-left: 100px;
+     position: relative;
+     font-size: 36px;
+     font-family: 'Kosugi Maru';
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     margin-bottom: 90px;
+     margin-bottom: 24px;
+     text-align: left;
       
   }
    .sub4{
-     font-family: 'Kosugi';
-     position:static;
-     margin-left:85px;
-     margin-bottom: 100px;
+     margin-left: 100px;
+     position: relative;
      font-size: 32px;
+     font-family: 'Kosugi';
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
      display: flex;
      flex-direction: column;
-     line-height: 1.05;                      
-     gap: 4px;  
+     line-height: 1.2;
+     gap: 4px;
+     margin-bottom: 24px;
   }
    .sub4 p{
       margin: 0;
@@ -227,25 +315,26 @@ body, html {
     }  
 
     .language{
-      font-family:'Kosugi Maru';
-      font-size:36px;
-      position:static;
-      margin-left:-1030px;
-      bottom:-1920px;
+      margin-left: 100px;
+      position: relative;
+      font-size: 36px;
+      font-family: 'Kosugi Maru';
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+      margin-bottom: 24px;
+      text-align: left;
     }
 
     .sub5{
-      font-family:'Kosugi';
+      margin-left: 100px;
+      position: relative;
       font-size: 32px;
-      position:static;
-      margin-left:85px;
-      bottom: -1990px;
+      font-family: 'Kosugi';
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
-      line-height: 1.05;                      
-      gap: 4px;  
+      line-height: 1.2;
+      gap: 4px;
+      margin-bottom: 24px;
    }
    .sub5 p{
       margin: 0;
@@ -257,21 +346,21 @@ body, html {
   width: 100%;
 }
    .exp{
-      position: absolute !important;
+      position: static !important;
+      margin-left: auto;
       font-family:'Kosugi Maru';
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       font-size:36px;
-      right: 160px;
-      margin-bottom: 10px;
+      margin-bottom: 24px;
     }
 
  
     .sub6{
       font-family:'Kosugi';
       font-size: 32px;
-      position: absolute !important;
-      right: 100px;
-      bottom: 630px;
+      position: static !important;
+      margin-left: auto;
+      margin-bottom: 24px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
@@ -286,15 +375,15 @@ body, html {
     }
 
      .ach{
-      position: absolute !important;
+      position: static !important;
+      margin-left: auto;
       font-family: 'Kosugi Maru';
       font-size: 36px;
-      right:120px;
-      bottom: 500px;
-     }
+      margin-bottom: 24px;
+    }
     
     .sub7{
-      position: absolute !important;
+      position: static !important;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       font-size:32px;
       font-family: 'Kosugi';
@@ -302,8 +391,8 @@ body, html {
       flex-direction: column;
       line-height: 1.05;
       gap: 4px;
-      bottom:300px;
-      margin: 0 0 40px 0 !important;
+      margin-left: auto;
+      margin-bottom: 24px;
     }
 
     .sub7 p{
@@ -321,7 +410,7 @@ body, html {
       text-align: center;
       padding-top: 60px;
       font-family: 'Kosugi Maru';
-      margin-top: 20px; 
+      margin-top: 10px; 
 
       
     }
@@ -429,7 +518,7 @@ body, html {
 }
 
 .project-card{
-  background:#FFFFFF;
+  background:#F4F4F4;
   border-radius:37px;
   width:320px;
   height:500px;
@@ -446,6 +535,16 @@ body, html {
   border-radius: 12px;
   margin-bottom: 16px;
 }
+
+.project-card h2 {
+  font-family: 'Kosugi Maru';
+  font-size: 28px;
+  margin: 10px 0 8px 0;
+}
+
+
+
+
 
 
 

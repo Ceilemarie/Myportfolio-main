@@ -1,51 +1,55 @@
-// script.js
-const hoverWrappers = document.querySelectorAll('.text-hover-wrap');
+document.addEventListener("DOMContentLoaded", function () {
+  // Apply hover effect to all shape-hover-wrapper elements
+  document.querySelectorAll('.shape-hover-wrapper').forEach(function(wrapper) {
+    const shape = wrapper.querySelector('.hover-shape');
+    const text = wrapper.querySelector('.hover-text');
 
-hoverWrappers.forEach(wrapper => {
-  const text = wrapper.querySelector('.hover-text');
-  const canvas = wrapper.querySelector('.hover-canvas');
-  const ctx = canvas.getContext('2d');
-  let animationId;
+    wrapper.addEventListener('mouseenter', () => {
+      if (shape) {
+        gsap.to(shape, {
+          duration: 0.6,
+          opacity: 1,
+          scale: 1.2,
+          rotate: 20,
+          ease: "power3.out"
+        });
+      }
+      if (text) {
+        gsap.to(text, {
+          duration: 0.5,
+          backgroundImage: "linear-gradient(135deg,rgb(0, 8, 255),rgb(51, 255, 252))",
+          backgroundClip: "text",
+          WebkitBackgroundClip: "text",
+          color: "transparent"
+        });
+      }
+    });
 
-  function resizeCanvas() {
-    canvas.width = wrapper.offsetWidth;
-    canvas.height = wrapper.offsetHeight;
-  }
-
-  function drawGradientShape() {
-    let hue = 0;
-
-    function draw() {
-      ctx.clearRect(0, 0, canvas.width, canvas.height);
-      let gradient = ctx.createRadialGradient(
-        canvas.width / 2, canvas.height / 2, 10,
-        canvas.width / 2, canvas.height / 2, 100
-      );
-      gradient.addColorStop(0, `hsl(${hue % 360}, 100%, 60%)`);
-      gradient.addColorStop(1, `transparent`);
-
-      ctx.fillStyle = gradient;
-      ctx.beginPath();
-      ctx.arc(canvas.width / 2, canvas.height / 2, 80, 0, Math.PI * 2);
-      ctx.fill();
-
-      hue += 2;
-      animationId = requestAnimationFrame(draw);
-    }
-
-    draw();
-  }
-
-  wrapper.addEventListener('mouseenter', () => {
-    resizeCanvas();
-    canvas.style.display = 'block';
-    text.style.opacity = 0;
-    drawGradientShape();
+    wrapper.addEventListener('mouseleave', () => {
+      if (shape) {
+        gsap.to(shape, {
+          duration: 0.5,
+          opacity: 0,
+          scale: 1,
+          rotate: 0,
+          ease: "power2.inOut"
+        });
+      }
+      if (text) {
+        gsap.to(text, {
+          duration: 0.5,
+          color: "black",
+          backgroundImage: "none"
+        });
+      }
+    });
   });
 
-  wrapper.addEventListener('mouseleave', () => {
-    text.style.opacity = 1;
-    canvas.style.display = 'none';
-    cancelAnimationFrame(animationId);
-  });
+  // dark mode toggle 
+  const toggle = document.getElementById('toggle-darkmode');
+  if (toggle) {
+    toggle.addEventListener('change', function() {
+      document.body.classList.toggle('darkmode', this.checked);
+    });
+  }
 });

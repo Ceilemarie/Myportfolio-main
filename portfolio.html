@@ -3,61 +3,69 @@
   <head>
    <meta charset="utf-8" />
    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-   <title>Portfolio</title>
+   <title>My Portfolio</title>
    <link href="https://fonts.googleapis.com/css2?family=Karma:wght@400;700&family=Kosugi&family=Kosugi+Maru&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
 
 </head>
 <body>
 <section class="aboutc">
-<div class="aboutc-content">
-  <div class="Title"> 
+  <div class="aboutc-content">
+    <div class="Title"> 
+      <div class="shape-hover-wrapper" style="display: inline-flex; align-items: center; position: relative; cursor: pointer;">
+        <span class="hover-text">Portfolio</span>
+        <svg class="hover-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; opacity: 0;">
+          <path fill="#ff00cc" d="M40,-40C53,-28,65,-14,66,3C67,20,57,40,42,49C27,58,7,57,-13,52C-34,47,-55,37,-64,20C-73,3,-71,-20,-60,-36C-49,-52,-28,-61,-7,-62C13,-63,27,-56,40,-40Z" transform="translate(100 100)" />
+        </svg>
+      </div>
+    </div>
 
-    <p class="text-hover-wrap">
-      <span class="hover-text">PORTFOLIO</span>
-      <canvas class="hover-canvas"></canvas>
-    </p>
+    
+  <div class="darkmode">
+    <input type="checkbox" id="toggle-darkmode">
+    <label for="toggle-darkmode" class="switch">
+      <span class="slider"></span>
+    </label>
   </div>
 
-  <div class="intro">
-    <h1 class="text-hover-wrap">
-      <span class="hover-text">Ceile Guce</span>
-      <canvas class="hover-canvas"></canvas>
-    </h1>
-  
+
+
+    <div class="intro">
+        <div class="shape-hover-wrapper" style="display: inline-flex; align-items: center; position: relative; cursor: pointer;"></div>
+      <h1>Ceile Guce</h1>
+    </div>
+    
     <div class="sub">
       <p>Computer Science</p>
       <p>Social Media Manager</p>
       <p>Aspiring Frontend Web Developer</p>
       <p>UI/UX Designer</p>
-</div>
+    </div>
 
     <div class="info">
       <h1>Contact</h1>
-</div>
-   
+    </div>
     <div class="sub2">
-     <p>Email: ceile.guce@gmail.com</p>
+      <p>Email: ceile.guce@gmail.com</p>
       <p>LinkedIn: in/ceileguce</p>
       <p>Instagram: ceile.ee</p>
       <p>Github: sheliyii</p>
     </div>
-
+    
     <div class="line"></div>
 
-   
     <div class="About">
-        <h1>About Me</h1>
-        <img src="images/ceile.png" class="Me" alt="Ceile Guce">
-     </div>
-
-  
-
+      <h1>About Me</h1>
+      <img src="images/ceile.png" class="Me" alt="Ceile Guce">
+    </div>
     <div class="row">
       <div class="education">
         <h1>Education</h1>
       </div>
+
       <div class="exp">
         <h1>Experiences</h1>
       </div>
@@ -73,7 +81,7 @@
       <p>FREELANCE- Graphic Designer</p>
       <p>2023-2025</p>
     </div>
- 
+
 
     <div class="softwares">
       <h1>Softwares</h1>
@@ -85,37 +93,26 @@
       <p>Capcut</p>
       <p>Visual Studio Code</p>
     </div>
-  
-    
-
-    
     <div class="language">
       <h1>Languages</h1>
     </div>
+
     <div class="sub5">
       <p>Tagalog</p>
       <p>English</p>
     </div>
-  
-  
 
     <div class="ach">
       <h1>Achievements</h1>
-   </div>
+    </div>
     <div class="sub7">
       <p>Scholarship Recipient-UAEB</p>
       <p>Representative-DOLE</p>
       <p>Dean Lister </p>
       <p>Passed IC3 Digital Literacy(Level 1)</p>
     </div>
-    </div>
-      </div>
-
-
-      <div class="png-blob-container">
-        <img src=""
-      </div>
-    </section>
+  </div>
+</section>
    
 
   <section class="socmed24">
@@ -196,9 +193,11 @@
     <div class="project-gallery">
       <div class="project-card">
         <img src="images/prj1.png" alt="Digital Pet">
+        <h2>Digital Pet</h2>
       </div>
       <div class="project-card">
         <img src="images/prj2.png" alt="ECOGIVE">
+         <h2>ECOGIVE</h2>
       </div>
       <div class="project-card">
         <img src="images/" alt="ECOGIVE">
@@ -209,12 +208,10 @@
 
     </div>
 
-   
   </section>
 
 
-  <script src="script.js">
-  </script>
+ 
     
 
 
@@ -230,6 +227,6 @@
 
 
         
-
+  <script src="script.js"></script>
 </body>
 </html>
