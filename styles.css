@@ -4,7 +4,6 @@
 
 body, html {
   overflow-x: hidden !important;
-  overflow-y: auto !important;
   margin: 0;
   padding: 0;
 }
@@ -19,16 +18,45 @@ body, html {
 
 .shape-hover-wrapper {
   position: relative;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
-.hover-text {
+.hover-portfolio {
   font-size: 128px;
   font-weight: bold;
   color: #000;
   transition: color 0.3s ease;
   z-index: 2;
   position: relative;
+}
+
+.hover-name {
+  font-family: 'Kosugi Maru';
+  position: relative;
+  font-size: 64px;
+  font-weight: bold;
+  color: #000;
+  z-index: 2;
+  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+  transition: color 0.3s ease;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.hover-info{
+  font-family: 'Kosugi Maru';
+  position: relative;
+  font-size: 64px;
+  font-weight: bold;
+  color: #000;
+  z-index: 2;
+  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+  transition: color 0.3s ease;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .hover-shape {
@@ -45,91 +73,15 @@ body, html {
 }
 
 
-body.darkmode {
-  background: #181A20 !important; /* true dark background */
-  color: #F8F8FF !important; /* light text */
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 
-html.darkmode {
-  background: #181A20 !important;
-  overflow-x: hidden;
-  overflow-y: auto;
-}
 
-body.darkmode .aboutc,
-body.darkmode .aboutc-content {
-  background: #23263A !important; /* dark section background */
-  color: #F8F8FF !important;
-}
-
-body.darkmode h1,
-body.darkmode h2,
-body.darkmode h3,
-body.darkmode p,
-body.darkmode .Title,
-body.darkmode .sub,
-body.darkmode .sub2,
-body.darkmode .sub3,
-body.darkmode .sub4,
-body.darkmode .sub5,
-body.darkmode .sub6,
-body.darkmode .sub7,
-body.darkmode .info,
-body.darkmode .About {
-  color: #F8F8FF !important;
-  text-shadow: 2px 2px 8px #000A !important;
-}
-
-body.darkmode .line {
-  background-color: #F8F8FF !important;
-}
-
-body.darkmode .project-card {
-  background: #23263A !important;
-  color: #F8F8FF !important;
-  box-shadow: 0 0 20px rgba(0,0,0,0.7);
-}
-
-body.darkmode .project-card h2 {
-  color: #F8F8FF !important;
-}
-
-body.darkmode .socmed24,
-body.darkmode .Projects {
-  background: #181A20 !important;
-  color: #F8F8FF !important;
-}
-
-body.darkmode .socmed24 h1,
-body.darkmode .Projects h1 {
-  color: #F8F8FF !important;
-}
-
-body.darkmode .hover-text {
-  color: #F8F8FF !important;
-}
-
-body.darkmode ::-webkit-scrollbar {
-  background: #23263A;
-}
-body.darkmode ::-webkit-scrollbar-thumb {
-  background: #484852;
-}
-body.darkmode ::selection {
-  background: #484852;
-  color: #F8F8FF;
-}
-
-/* End dark mode fixes */
 
 .aboutc{
-    background:#4D49FC;
+    background:#7371d3;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    min-height: 100vh; /* Ensures section is at least full viewport height, but grows with content */
+    min-height: 200vh; 
     position: relative;
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -149,16 +101,10 @@ body.darkmode ::selection {
       box-shadow: none !important;
     }
 
-    .intro h1 {
-      font-family: 'Kosugi Maru';
-      position: relative;
-      font-size: 64px;
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      bottom: -30px;
-      justify-content: center;
-      text-align: center;
-    }
+
+    
+   
+
 
     .sub{
       font-family: 'Kosugi';
@@ -180,16 +126,7 @@ body.darkmode ::selection {
       padding: 0;
     }   
 
-    .info{
-        position:relative;
-        font-size:44px;
-        font-family:'Kosugi Maru';
-        text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-        display: flex;
-        bottom: -50px;
-        justify-content: center;
-        text-align: center;
-    }
+    
 
     .sub2{
      font-family: 'Kosugi';
@@ -265,7 +202,7 @@ body.darkmode ::selection {
      font-size:36px;
      font-family:'Kosugi Maru';
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     margin-bottom: 10px;
+     margin-bottom: 24px;
      text-align: left;
       
   }
@@ -346,11 +283,11 @@ body.darkmode ::selection {
   width: 100%;
 }
    .exp{
-      position: static !important;
-      margin-left: auto;
+      position: absolute !important;
       font-family:'Kosugi Maru';
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       font-size:36px;
+      right: 100px;
       margin-bottom: 24px;
     }
 
@@ -358,9 +295,9 @@ body.darkmode ::selection {
     .sub6{
       font-family:'Kosugi';
       font-size: 32px;
-      position: static !important;
-      margin-left: auto;
-      margin-bottom: 24px;
+      position: absolute !important;
+      right: 100px;
+      bottom: 580px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
@@ -375,15 +312,17 @@ body.darkmode ::selection {
     }
 
      .ach{
-      position: static !important;
-      margin-left: auto;
+      position: absolute !important;
       font-family: 'Kosugi Maru';
       font-size: 36px;
+      right:100px;
+      bottom: 450px;
+      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       margin-bottom: 24px;
-    }
+     }
     
     .sub7{
-      position: static !important;
+      position: absolute !important;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       font-size:32px;
       font-family: 'Kosugi';
@@ -391,8 +330,8 @@ body.darkmode ::selection {
       flex-direction: column;
       line-height: 1.05;
       gap: 4px;
-      margin-left: auto;
-      margin-bottom: 24px;
+      bottom:300px;
+      margin-bottom: -29px;
     }
 
     .sub7 p{
@@ -542,6 +481,25 @@ body.darkmode ::selection {
   margin: 10px 0 8px 0;
 }
 
+
+.otherinfo{
+  background:#890a7e;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 20px;
+  z-index: 30;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Kosugi Maru';
+  margin-top: 8px; 
+}
+.otherinfo h1{
+  font-size:64px;
+  color:#F8F8FF;
+  margin-bottom: 50px; 
+  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+}
 
 
 

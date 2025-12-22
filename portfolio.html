@@ -8,46 +8,69 @@
    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="styles.css">
    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-
+   
 
 </head>
 <body>
+
 <section class="aboutc">
   <div class="aboutc-content">
     <div class="Title"> 
       <div class="shape-hover-wrapper" style="display: inline-flex; align-items: center; position: relative; cursor: pointer;">
-        <span class="hover-text">Portfolio</span>
-        <svg class="hover-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; opacity: 0;">
-          <path fill="#ff00cc" d="M40,-40C53,-28,65,-14,66,3C67,20,57,40,42,49C27,58,7,57,-13,52C-34,47,-55,37,-64,20C-73,3,-71,-20,-60,-36C-49,-52,-28,-61,-7,-62C13,-63,27,-56,40,-40Z" transform="translate(100 100)" />
-        </svg>
+        <span class="hover-portfolio">Portfolio</span>
+       <!-- First shape - Pink/Blue blob -->
+      <svg class="hover-shape first-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; opacity: 0; z-index: 2; width: 90px; height: 200px;"> 
+        <defs>
+          <linearGradient id="pinkBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff00cc"/>
+            <stop offset="100%" stop-color="#00ccff"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#pinkBlueGradient)" d="M40,-40C53,-28,65,-14,66,3C67,20,57,40,42,49C27,58,7,57,-13,52C-34,47,-55,37,-64,20C-73,3,-71,-20,-60,-36C-49,-52,-28,-61,-7,-62C13,-63,27,-56,40,-40Z" transform="translate(100 100)" />
+      </svg>
+       
       </div>
     </div>
 
     
-  <div class="darkmode">
-    <input type="checkbox" id="toggle-darkmode">
-    <label for="toggle-darkmode" class="switch">
-      <span class="slider"></span>
-    </label>
-  </div>
+    <div class="shape-hover-wrapper" style="display: inline-flex; align-items: center; position: relative; cursor: pointer;">
+      <h1><span class="hover-name">Ceile Guce</span></h1>
+      <!-- Second shape - Yellow/Green blob -->
+      <svg class="hover-shape second-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; opacity: 0; z-index: 1; width: 90px; height: 200px;">
+        <defs>
+          <linearGradient id="yellowGreenGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ffe600"/>
+            <stop offset="100%" stop-color="#00ff99"/>
+          </linearGradient>
+        </defs>
+       <path fill="url(#yellowGreenGradient)" d="M20.9,-23.1C27.4,-16.2,33.1,-8.1,34.4,1.3C35.7,10.7,32.5,21.3,26,27.7C19.5,34,9.7,36,-0.2,36.2C-10.1,36.4,-20.2,34.8,-27.4,28.5C-34.6,22.2,-38.8,11.1,-38.7,0.1C-38.6,-10.9,-34.1,-21.8,-26.9,-28.7C-19.7,-35.6,-9.8,-38.5,-0.8,-37.6C8.2,-36.7,16.4,-32,20.9,-23.1Z" transform="translate(100 100)" />
+      </svg>
+   </div>
 
-
-
-    <div class="intro">
-        <div class="shape-hover-wrapper" style="display: inline-flex; align-items: center; position: relative; cursor: pointer;"></div>
-      <h1>Ceile Guce</h1>
-    </div>
     
     <div class="sub">
       <p>Computer Science</p>
       <p>Social Media Manager</p>
       <p>Aspiring Frontend Web Developer</p>
+      <p>Aspiring Machine learning Engineer</p>
       <p>UI/UX Designer</p>
     </div>
 
-    <div class="info">
-      <h1>Contact</h1>
-    </div>
+   
+      <div class="shape-hover-wrapper" style="display: inline-flex; align-items: center; position: relative; cursor: pointer;">
+      <span class="hover-info">Contact</span>
+      <svg class="hover-shape third-shape" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" style="position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); pointer-events: none; opacity: 0; z-index: 1; width: 90px; height: 200px;">
+        <defs>
+          <linearGradient id="purpleOrangeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+            <stop offset="0%" stop-color="#ff7f50"/>
+            <stop offset="100%" stop-color="#8a2be2"/>
+          </linearGradient>
+        </defs>
+        <path fill="url(#purpleOrangeGradient)" d="M20.9,-23.1C27.4,-16.2,33.1,-8.1,34.4,1.3C35.7,10.7,32.5,21.3,26,27.7C19.5,34,9.7,36,-0.2,36.2C-10.1,36.4,-20.2,34.8,-27.4,28.5C-34.6,22.2,-38.8,11.1,-38.7,0.1C-38.6,-10.9,-34.1,-21.8,-26.9,-28.7C-19.7,-35.6,-9.8,-38.5,-0.8,-37.6C8.2,-36.7,16.4,-32,20.9,-23.1Z" transform="translate(100 100)" />
+      </svg>
+      </div>
+
+    
     <div class="sub2">
       <p>Email: ceile.guce@gmail.com</p>
       <p>LinkedIn: in/ceileguce</p>
@@ -92,6 +115,7 @@
       <p>Canva</p>
       <p>Capcut</p>
       <p>Visual Studio Code</p>
+      <p>Krita for PixelArt</p>
     </div>
     <div class="language">
       <h1>Languages</h1>
@@ -106,10 +130,12 @@
       <h1>Achievements</h1>
     </div>
     <div class="sub7">
-      <p>Scholarship Recipient-UAEB</p>
+      <p>Dean Lister</p>
       <p>Representative-DOLE</p>
-      <p>Dean Lister </p>
+      <p>Scholarship Recipient-UAEB</p>
       <p>Passed IC3 Digital Literacy(Level 1)</p>
+      <p>BSCS Model for Marketing</p>
+      <p>Social Media Manager of CODECS</p>
     </div>
   </div>
 </section>
@@ -200,14 +226,34 @@
          <h2>ECOGIVE</h2>
       </div>
       <div class="project-card">
-        <img src="images/" alt="ECOGIVE">
+        <img src="images/prj3.png" alt="Landingtolife">
+        <h2>LANDING PAGE</h2>
       </div>
       <div class="project-card">
-        <img src="images/" alt="ECOGIVE">
+        <img src="images/prj4.png" alt="Ecommerce">
+        <h2>A&F CHOCOLATE SHOP</h2>
+      </div>
+      <div class="project-card">
+        <img src="images/prj5.png" alt="Sonny">
+        <h2>DRESSUPGAME ONGOING</h2>
+      </div>
+      <div class="project-card">
+        <img src="images/" alt="hmm">
+        <h2>hmm</h2>
       </div>
 
     </div>
 
+  </section>
+
+
+
+  <section class="otherinfo">
+    <div class="otherinfo-content">
+      <h1>Tools</h1>
+    </div>
+
+   
   </section>
 
 
