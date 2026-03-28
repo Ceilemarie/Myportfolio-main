@@ -25,18 +25,19 @@ body, html {
 }
 
 .hover-portfolio {
-  font-size: 128px;
+  font-size: 180px;
   font-weight: bold;
   color: #000;
   transition: color 0.3s ease;
   z-index: 2;
   position: relative;
+  margin-bottom: 80px;
 }
 
 .hover-name {
   font-family: 'Kosugi Maru';
   position: relative;
-  font-size: 64px;
+  font-size: 72px;
   font-weight: bold;
   color: #000;
   z-index: 2;
@@ -44,12 +45,13 @@ body, html {
   transition: color 0.3s ease;
   background-clip: text;
   -webkit-background-clip: text;
+  margin-top: 40px;
 }
 
 .hover-info{
   font-family: 'Kosugi Maru';
   position: relative;
-  font-size: 64px;
+  font-size: 72px;
   font-weight: bold;
   color: #000;
   z-index: 2;
@@ -57,6 +59,7 @@ body, html {
   transition: color 0.3s ease;
   background-clip: text;
   -webkit-background-clip: text;
+  margin-top: 80px;
 }
 
 .hover-shape {
@@ -99,6 +102,8 @@ body, html {
       text-align: center;
       background: transparent !important;
       box-shadow: none !important;
+      padding: 40px 0;
+      margin-bottom: 20px;
     }
 
 
@@ -109,16 +114,17 @@ body, html {
     .sub{
       font-family: 'Kosugi';
       position: relative;
-      font-size: 48px;
+      font-size: 40px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
       align-items: center;
-      bottom: -30px;
       text-align: center;
-      line-height: 1.05;  
+      line-height: 1.2;  
       margin: 0;                    
-      gap: 4px;   
+      gap: 8px;   
+      margin-top: 50px;
+      margin-bottom: 60px;
     }
 
     .sub p {
@@ -126,21 +132,25 @@ body, html {
       padding: 0;
     }   
 
-    
+    .shape-hover-wrapper:has(.hover-info) {
+      margin-top: 30px;
+      margin-bottom: 20px;
+    }
 
     .sub2{
      font-family: 'Kosugi';
       position: relative;
-      font-size: 48px;
+      font-size: 40px;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
       align-items: center;
-      bottom: -50px;
       text-align: center;
-      line-height: 1.05;  
+      line-height: 1.2;  
       margin: 0;                    
-      gap: 4px;   
+      gap: 8px;   
+      margin-top: 40px;
+      margin-bottom: 60px;
     }
 
      .sub2 p {
@@ -149,12 +159,12 @@ body, html {
     }  
 
    .line {
-    width: 100%;
+    width: 95%;
     height: 3px;
     background-color: #000000;
-    margin: 75px 0 24px 0;
+    margin: 100px auto 60px auto;
     border-radius: 2px;
- 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
    }
 
     
@@ -197,26 +207,28 @@ body, html {
 }
 
   .education{
-     position:static;
+     position: relative;
      margin-left:100px;
      font-size:36px;
      font-family:'Kosugi Maru';
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
      margin-bottom: 24px;
      text-align: left;
-      
+     margin-top: 0;
+     flex: 1;
   }
     .sub3{
      font-family: 'Kosugi';
-     position: static;
+     position: relative;
      margin-left:100px;
-     font-size: 32px;
+     font-size: 28px;
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
      display: flex;
      flex-direction: column;
-     line-height: 1.05;                   
-     gap: 4px;  
-     margin-bottom:60px;
+     line-height: 1.4;                   
+     gap: 10px;  
+     margin-bottom: 60px;
+     margin-top: 0;
   }
    .sub3 p {
       margin: 0;
@@ -224,7 +236,7 @@ body, html {
     }  
 
 
-     .softwares{
+    .softwares{
      margin-left: 100px;
      position: relative;
      font-size: 36px;
@@ -232,19 +244,20 @@ body, html {
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
      margin-bottom: 24px;
      text-align: left;
-      
+     margin-top: 60px;
   }
    .sub4{
      margin-left: 100px;
      position: relative;
-     font-size: 32px;
+     font-size: 28px;
      font-family: 'Kosugi';
      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
      display: flex;
      flex-direction: column;
-     line-height: 1.2;
-     gap: 4px;
-     margin-bottom: 24px;
+     line-height: 1.4;
+     gap: 10px;
+     margin-bottom: 60px;
+     margin-top: 0;
   }
    .sub4 p{
       margin: 0;
@@ -259,19 +272,21 @@ body, html {
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       margin-bottom: 24px;
       text-align: left;
+      margin-top: 60px;
     }
 
     .sub5{
       margin-left: 100px;
       position: relative;
-      font-size: 32px;
+      font-size: 28px;
       font-family: 'Kosugi';
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
-      line-height: 1.2;
-      gap: 4px;
-      margin-bottom: 24px;
+      line-height: 1.4;
+      gap: 10px;
+      margin-bottom: 60px;
+      margin-top: 0;
    }
    .sub5 p{
       margin: 0;
@@ -279,31 +294,46 @@ body, html {
     } 
     
     .row {
-  position: relative;
-  width: 100%;
-}
+      position: relative;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-top: 60px;
+      margin-bottom: 0;
+      gap: 100px;
+    }
    .exp{
-      position: absolute !important;
+      position: relative;
       font-family:'Kosugi Maru';
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       font-size:36px;
-      right: 100px;
+      right: auto;
       margin-bottom: 24px;
+      text-align: left;
+      margin-right: 100px;
+      margin-left: 0;
+      flex: 1;
     }
 
  
     .sub6{
       font-family:'Kosugi';
-      font-size: 32px;
-      position: absolute !important;
-      right: 100px;
-      bottom: 580px;
+      font-size: 28px;
+      position: relative;
+      right: auto;
+      bottom: auto;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       display: flex;
       flex-direction: column;
-      line-height: 1.05;                  
-      gap: 4px; 
-      
+      line-height: 1.4;                  
+      gap: 10px;
+      align-items: flex-start;
+      text-align: left;
+      margin-right: 100px;
+      margin-left: 0;
+      margin-bottom: 60px;
+      margin-top: 0;
     }
 
     .sub6 p{
@@ -312,26 +342,34 @@ body, html {
     }
 
      .ach{
-      position: absolute !important;
+      position: relative;
       font-family: 'Kosugi Maru';
       font-size: 36px;
-      right:100px;
-      bottom: 450px;
+      right:auto;
+      bottom: auto;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
       margin-bottom: 24px;
+      text-align: left;
+      margin-left: 100px;
+      margin-top: 60px;
      }
     
     .sub7{
-      position: absolute !important;
       text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      font-size:32px;
+      font-size:28px;
       font-family: 'Kosugi';
       display: flex;
       flex-direction: column;
-      line-height: 1.05;
-      gap: 4px;
-      bottom:300px;
-      margin-bottom: -29px;
+      line-height: 1.4;
+      gap: 10px;
+      right: auto;
+      bottom: auto;
+      margin-bottom: 0;
+      margin-left: 100px;
+      margin-top: 0;
+      align-items: flex-start;
+      text-align: left;
+      position: relative;
     }
 
     .sub7 p{
@@ -427,7 +465,33 @@ body, html {
   width: 100%;
 }
 
+.socmed24-posters h1{
+  font-size:64px;
+  color:#F8F8FF;
+  margin-bottom: 40px; 
+  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+  margin-top: 60px;
+}
 
+.socmed25{
+  background:#4a90a4;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 20px;
+  z-index: 10;
+  text-align: center;
+  padding-top: 60px;
+  font-family: 'Kosugi Maru';
+  margin-top: 10px; 
+}
+
+.socmed25 h1{
+  font-size:64px;
+  color:#F8F8FF;
+  margin-bottom: 40px; 
+  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+}
 
 .Projects{
    background:#000000;
@@ -454,31 +518,90 @@ body, html {
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  padding: 20px;
 }
 
 .project-card{
-  background:#F4F4F4;
-  border-radius:37px;
-  width:320px;
-  height:500px;
+  background: #F4F4F4;
+  border-radius: 37px;
+  width: 340px;
+  height: auto;
   text-align: center;
-  padding:20px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   stroke: #000000;
+  border-top: 4px solid #999;
+  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  position: relative;
+  overflow: hidden;
 }
 
+/* Vibrant color accents for each project */
+.project-card--pet {
+  border-top-color: #FF6B6B;
+}
+
+.project-card--eco {
+  border-top-color: #4ECDC4;
+}
+
+.project-card--landing {
+  border-top-color: #FFD93D;
+}
+
+.project-card--shop {
+  border-top-color: #C06C84;
+}
+
+.project-card--dress {
+  border-top-color: #6BCB77;
+}
+
+.project-card--portfolio {
+  border-top-color: #A29BFE;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover img {
+  transform: scale(1.05);
+}
 
 .project-card img {
   width: 100%;
-  height: 500x;
+  height: auto;
   border-radius: 12px;
   margin-bottom: 16px;
+  transition: transform 0.3s ease;
+  object-fit: cover;
 }
 
 .project-card h2 {
   font-family: 'Kosugi Maru';
   font-size: 28px;
-  margin: 10px 0 8px 0;
+  margin: 12px 0 10px 0;
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.project-card p {
+  font-family: 'Kosugi';
+  font-size: 16px;
+  color: #555;
+  margin: 12px 0 0 0;
+  line-height: 1.4;
+  transition: color 0.3s ease;
+}
+
+.project-card:hover h2 {
+  color: #333;
+}
+
+.project-card:hover p {
+  color: #666;
 }
 
 
