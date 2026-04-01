@@ -80,7 +80,7 @@ body, html {
 
 
 .aboutc{
-    background:#7371d3;
+    background: #7371d3;
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
@@ -188,6 +188,22 @@ body, html {
       margin: 30px auto 0 auto;
       max-width: 300px;
       width: 100%;
+    }
+
+    .about-text {
+      font-family: 'Kosugi';
+      font-size: 24px;
+      line-height: 1.6;
+      margin-top: 30px;
+      max-width: 600px;
+      text-align: center;
+      color: #000;
+      text-shadow: 2px 2px 4px rgba(155, 146, 146, 0.3);
+    }
+
+    .about-text p {
+      margin: 0;
+      padding: 0 20px;
     }
 
   .education, .softwares, .language, .exp, .ach {
@@ -522,15 +538,14 @@ body, html {
 }
 
 .project-card{
-  background: #F4F4F4;
-  border-radius: 37px;
+  background: #FAFAFA;
+  border-radius: 12px;
   width: 340px;
   height: auto;
   text-align: center;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-  stroke: #000000;
-  border-top: 4px solid #999;
+  padding: 24px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  border: 1px solid #E0E0E0;
   transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   position: relative;
   overflow: hidden;
@@ -538,32 +553,33 @@ body, html {
 
 /* Vibrant color accents for each project */
 .project-card--pet {
-  border-top-color: #FF6B6B;
+  border-left: 4px solid #FF6B6B;
 }
 
 .project-card--eco {
-  border-top-color: #4ECDC4;
+  border-left: 4px solid #4ECDC4;
 }
 
 .project-card--landing {
-  border-top-color: #FFD93D;
+  border-left: 4px solid #FFD93D;
 }
 
 .project-card--shop {
-  border-top-color: #C06C84;
+  border-left: 4px solid #C06C84;
 }
 
 .project-card--dress {
-  border-top-color: #6BCB77;
+  border-left: 4px solid #6BCB77;
 }
 
 .project-card--portfolio {
-  border-top-color: #A29BFE;
+  border-left: 4px solid #A29BFE;
 }
 
 .project-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  border-color: #D0D0D0;
 }
 
 .project-card:hover img {
@@ -572,27 +588,28 @@ body, html {
 
 .project-card img {
   width: 100%;
-  height: auto;
-  border-radius: 12px;
-  margin-bottom: 16px;
+  height: 220px;
+  border-radius: 8px;
+  margin-bottom: 20px;
   transition: transform 0.3s ease;
   object-fit: cover;
 }
 
 .project-card h2 {
   font-family: 'Kosugi Maru';
-  font-size: 28px;
-  margin: 12px 0 10px 0;
-  color: #000;
+  font-size: 24px;
+  margin: 16px 0 12px 0;
+  color: #1a1a1a;
   transition: color 0.3s ease;
+  font-weight: 600;
 }
 
 .project-card p {
   font-family: 'Kosugi';
-  font-size: 16px;
-  color: #555;
+  font-size: 15px;
+  color: #666;
   margin: 12px 0 0 0;
-  line-height: 1.4;
+  line-height: 1.5;
   transition: color 0.3s ease;
 }
 
