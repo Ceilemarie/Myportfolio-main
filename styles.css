@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Floraison des Amours';
+  src: url('./floraison_des_amours/Floraison des Amours.ttf') format('truetype');
+}
+
+/* ===== GLOBAL STYLES ===== */
 * {
   box-sizing: border-box;
 }
@@ -8,12 +14,13 @@ body, html {
   padding: 0;
 }
 
+/* ===== LAYOUT CONTAINERS ===== */
 .aboutc-content {
-    left: 0;
-    right: 0;
-    position: relative;
-    background: transparent !important;
-    box-shadow: none !important;
+  left: 0;
+  right: 0;
+  position: relative;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
 .shape-hover-wrapper {
@@ -24,14 +31,15 @@ body, html {
   width: 100%;
 }
 
+/* ===== TYPOGRAPHY & TEXT STYLES ===== */
 .hover-portfolio {
-  font-size: 180px;
-  font-weight: bold;
+  font-family: 'Floraison des Amours';
+  font-size: 300px;
   color: #000;
   transition: color 0.3s ease;
   z-index: 2;
   position: relative;
-  margin-bottom: 80px;
+  margin-bottom:50px;
 }
 
 .hover-name {
@@ -41,21 +49,19 @@ body, html {
   font-weight: bold;
   color: #000;
   z-index: 2;
-  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
   transition: color 0.3s ease;
   background-clip: text;
   -webkit-background-clip: text;
   margin-top: 40px;
 }
 
-.hover-info{
+.hover-info {
   font-family: 'Kosugi Maru';
   position: relative;
   font-size: 72px;
   font-weight: bold;
   color: #000;
   z-index: 2;
-  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
   transition: color 0.3s ease;
   background-clip: text;
   -webkit-background-clip: text;
@@ -75,422 +81,132 @@ body, html {
   z-index: 1;
 }
 
-
-
-
-
-.aboutc{
-    background: #7371d3;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;
-    min-height: 200vh; 
-    position: relative;
-    width: 100vw;
-    margin-left: calc(50% - 50vw);
-    margin-right: calc(50% - 50vw);
-}
- 
-  .Title {
-      font-family: 'Great Vibes', cursive;
-      position: relative;
-      font-size: 160px;
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      top: 16px;
-      justify-content: center;
-      text-align: center;
-      background: transparent !important;
-      box-shadow: none !important;
-      padding: 40px 0;
-      margin-bottom: 20px;
-    }
-
-
-    
-   
-
-
-    .sub{
-      font-family: 'Kosugi';
-      position: relative;
-      font-size: 40px;
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      line-height: 1.2;  
-      margin: 0;                    
-      gap: 8px;   
-      margin-top: 50px;
-      margin-bottom: 60px;
-    }
-
-    .sub p {
-      margin: 0;
-      padding: 0;
-    }   
-
-    .shape-hover-wrapper:has(.hover-info) {
-      margin-top: 30px;
-      margin-bottom: 20px;
-    }
-
-    .sub2{
-     font-family: 'Kosugi';
-      position: relative;
-      font-size: 40px;
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      text-align: center;
-      line-height: 1.2;  
-      margin: 0;                    
-      gap: 8px;   
-      margin-top: 40px;
-      margin-bottom: 60px;
-    }
-
-     .sub2 p {
-      margin: 0;
-      padding: 0;
-    }  
-
-   .line {
-    width: 95%;
-    height: 3px;
-    background-color: #000000;
-    margin: 100px auto 60px auto;
-    border-radius: 2px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-   }
-
-    
-    .About {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      font-size: 44px;
-      font-family: 'Kosugi Maru';
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      text-align: center;
-      margin-bottom: 24px;
-    }
-
-   
-
-    .Me{
-      display: block;
-      margin: 30px auto 0 auto;
-      max-width: 300px;
-      width: 100%;
-    }
-
-    .about-text {
-      font-family: 'Kosugi';
-      font-size: 24px;
-      line-height: 1.6;
-      margin-top: 30px;
-      max-width: 600px;
-      text-align: center;
-      color: #000;
-      text-shadow: 2px 2px 4px rgba(155, 146, 146, 0.3);
-    }
-
-    .about-text p {
-      margin: 0;
-      padding: 0 20px;
-    }
-
-  .education, .softwares, .language, .exp, .ach {
-  position: static;
-  margin-left: 0;
-  margin-right: 0;
-  bottom: 0;
-  right: 0;
+/* ===== HERO & ABOUT SECTIONS ===== */
+.aboutc {
+  background: #fcfcfc;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
 }
 
-.sub3, .sub4, .sub5, .sub6, .sub7 {
-  position: static;
-  margin-left: 0;
-  right: 0;
-  bottom: 0;
+.other-content {
+  background: #fcfcfc;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: auto;
+  position: relative;
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.Title {
+  position: relative;
+  font-size: 160px;
+  display: flex;
+  top: 16px;
+  justify-content: center;
+  text-align: center;
+  background: transparent !important;
+  box-shadow: none !important;
+  padding: 40px 0;
   margin-bottom: 20px;
 }
 
-  .education{
-     position: relative;
-     margin-left:100px;
-     font-size:36px;
-     font-family:'Kosugi Maru';
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     margin-bottom: 24px;
-     text-align: left;
-     margin-top: 0;
-     flex: 1;
-  }
-    .sub3{
-     font-family: 'Kosugi';
-     position: relative;
-     margin-left:100px;
-     font-size: 28px;
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     display: flex;
-     flex-direction: column;
-     line-height: 1.4;                   
-     gap: 10px;  
-     margin-bottom: 60px;
-     margin-top: 0;
-  }
-   .sub3 p {
-      margin: 0;
-      padding: 0;
-    }  
+/* Professional Titles */
+.sub {
+  font-family: 'Kosugi';
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+  gap: 8px;
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+
+.sub p {
+  margin: 0;
+  padding: 0;
+}
+
+.shape-hover-wrapper:has(.hover-info) {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+/* Contact Information */
+.sub2 {
+  font-family: 'Kosugi';
+  position: relative;
+  font-size: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  line-height: 1.2;
+  margin: 0;
+  gap: 8px;
+  margin-top: 40px;
+  margin-bottom: 60px;
+}
+
+.sub2 p {
+  margin: 0;
+  padding: 0;
+}
 
 
-    .softwares{
-     margin-left: 100px;
-     position: relative;
-     font-size: 36px;
-     font-family: 'Kosugi Maru';
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     margin-bottom: 24px;
-     text-align: left;
-     margin-top: 60px;
-  }
-   .sub4{
-     margin-left: 100px;
-     position: relative;
-     font-size: 28px;
-     font-family: 'Kosugi';
-     text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     display: flex;
-     flex-direction: column;
-     line-height: 1.4;
-     gap: 10px;
-     margin-bottom: 60px;
-     margin-top: 0;
-  }
-   .sub4 p{
-      margin: 0;
-      padding: 0;
-    }  
 
-    .language{
-      margin-left: 100px;
-      position: relative;
-      font-size: 36px;
-      font-family: 'Kosugi Maru';
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      margin-bottom: 24px;
-      text-align: left;
-      margin-top: 60px;
-    }
+/* ===== POSTERS SUBSECTION ===== */
+.gallery-container2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
 
-    .sub5{
-      margin-left: 100px;
-      position: relative;
-      font-size: 28px;
-      font-family: 'Kosugi';
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      flex-direction: column;
-      line-height: 1.4;
-      gap: 10px;
-      margin-bottom: 60px;
-      margin-top: 0;
-   }
-   .sub5 p{
-      margin: 0;
-      padding: 0;
-    } 
-    
-    .row {
-      position: relative;
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      margin-top: 60px;
-      margin-bottom: 0;
-      gap: 100px;
-    }
-   .exp{
-      position: relative;
-      font-family:'Kosugi Maru';
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      font-size:36px;
-      right: auto;
-      margin-bottom: 24px;
-      text-align: left;
-      margin-right: 100px;
-      margin-left: 0;
-      flex: 1;
-    }
+.project-photo2 {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 5px;
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
+}
 
- 
-    .sub6{
-      font-family:'Kosugi';
-      font-size: 28px;
-      position: relative;
-      right: auto;
-      bottom: auto;
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      display: flex;
-      flex-direction: column;
-      line-height: 1.4;                  
-      gap: 10px;
-      align-items: flex-start;
-      text-align: left;
-      margin-right: 100px;
-      margin-left: 0;
-      margin-bottom: 60px;
-      margin-top: 0;
-    }
+.project-photo2 img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
 
-    .sub6 p{
-      margin:0;
-      padding:0;
-    }
-
-     .ach{
-      position: relative;
-      font-family: 'Kosugi Maru';
-      font-size: 36px;
-      right:auto;
-      bottom: auto;
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      margin-bottom: 24px;
-      text-align: left;
-      margin-left: 100px;
-      margin-top: 60px;
-     }
-    
-    .sub7{
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-      font-size:28px;
-      font-family: 'Kosugi';
-      display: flex;
-      flex-direction: column;
-      line-height: 1.4;
-      gap: 10px;
-      right: auto;
-      bottom: auto;
-      margin-bottom: 0;
-      margin-left: 100px;
-      margin-top: 0;
-      align-items: flex-start;
-      text-align: left;
-      position: relative;
-    }
-
-    .sub7 p{
-      margin: 0;
-      padding: 0;
-    }
-
-    .socmed24{
-      background:#73478D;
-      background-position: center;
-      background-attachment: fixed;
-      background-size: cover;
-      padding: 60px 20px;
-      z-index: 10;
-      text-align: center;
-      padding-top: 60px;
-      font-family: 'Kosugi Maru';
-      margin-top: 10px; 
-
-      
-    }
-    
-     .socmed24 h1{
-      font-size:64px;
-      color:#F8F8FF;
-      margin-bottom: 40px; 
-      text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
-     }
-
-     .gallery-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .project-photo {
-     width: 300px;
-     height: auto;
-     
-     border-radius: 10px;
-     overflow: hidden;
-     margin: 5px;
-     
-     box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
-     
-     
-    }
-
-
-   .project-photo img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-  }
-
-  .row {
+.row2 {
   display: flex;
   align-items: flex-start;
   width: 100%;
 }
 
-
- .gallery-container2{
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 30px;
-    }
-
-    .project-photo2{
-     width: 300px;
-     height: auto;
-     
-     border-radius: 10px;
-     overflow: hidden;
-     margin: 5px;
-     
-     box-shadow: 0 0 20px rgba(255, 0, 255, 0.3);
-     
-     
-    }
-
-   .project-photo2 img {
-    width: 100%;
-    display: block;
-    object-fit: cover;
-  }
-
-  .row2 {
-  display: flex;
-  align-items: flex-start;
-  width: 100%;
-}
-
-.socmed24-posters h1{
-  font-size:64px;
-  color:#F8F8FF;
-  margin-bottom: 40px; 
-  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+.socmed24-posters h1 {
+  font-size: 64px;
+  color: #000;
+  margin-bottom: 40px;
   margin-top: 60px;
 }
 
-.socmed25{
-  background:#4a90a4;
+/* ===== SOCIAL MEDIA SECTION 2025-2026 ===== */
+.socmed25 {
+  background: #fbfbfb;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -499,37 +215,36 @@ body, html {
   text-align: center;
   padding-top: 60px;
   font-family: 'Kosugi Maru';
-  margin-top: 10px; 
+  margin-top: 10px;
 }
 
-.socmed25 h1{
-  font-size:64px;
-  color:#F8F8FF;
-  margin-bottom: 40px; 
-  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+.socmed25 h1 {
+  font-size: 64px;
+  color: #000;
+  margin-bottom: 40px;
 }
 
-.Projects{
-   background:#000000;
-   background-position: center;
-   background-attachment: fixed;
-   background-size: cover;
-   padding: 60px 20px;
-   z-index: 20;
-   text-align: center;
-   padding-top: 50px;
-   font-family: 'Kosugi Maru';
-   margin-top: 12px; 
+/* ===== PROJECTS SECTION ===== */
+.Projects {
+  background: #fbfbfb;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  padding: 60px 20px;
+  z-index: 20;
+  text-align: center;
+  padding-top: 50px;
+  font-family: 'Kosugi Maru';
+  margin-top: 12px;
 }
 
-.Projects h1{
-  font-size:64px;
-  color:#F8F8FF;
-  margin-bottom: 40px; 
-  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+.Projects h1 {
+  font-size: 64px;
+  color: #000;
+  margin-bottom: 40px;
 }
 
-.project-gallery{
+.project-gallery {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -537,8 +252,8 @@ body, html {
   padding: 20px;
 }
 
-.project-card{
-  background: #FAFAFA;
+.project-card {
+  background: #111010;
   border-radius: 12px;
   width: 340px;
   height: auto;
@@ -551,7 +266,7 @@ body, html {
   overflow: hidden;
 }
 
-/* Vibrant color accents for each project */
+/* Color accents for each project card */
 .project-card--pet {
   border-left: 4px solid #FF6B6B;
 }
@@ -621,9 +336,9 @@ body, html {
   color: #666;
 }
 
-
-.otherinfo{
-  background:#890a7e;
+/* ===== TOOLS SECTION ===== */
+.otherinfo {
+  background: #fcfcfc;
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
@@ -632,13 +347,13 @@ body, html {
   text-align: center;
   padding-top: 50px;
   font-family: 'Kosugi Maru';
-  margin-top: 8px; 
+  margin-top: 8px;
 }
-.otherinfo h1{
-  font-size:64px;
-  color:#F8F8FF;
-  margin-bottom: 50px; 
-  text-shadow: 4px 4px 8px rgba(155, 146, 146, 0.5);
+
+.otherinfo h1 {
+  font-size: 64px;
+  color: #000;
+  margin-bottom: 50px;
 }
 
 
