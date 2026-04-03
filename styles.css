@@ -19,34 +19,25 @@ body, html {
 h1.title, .title {
   font-family: 'lt_perfume' !important;
   font-weight: lighter;
-  font-size: 320px;
-  display: flex;
-  top: 16px;
-  justify-content: center;
+  font-size: 150px;
   text-align: center;
-  padding: 40px 0;
-  margin-bottom: 20px;
+  padding: 20px 0;
+  margin: 0;
   color: #000;
 }
 
 h2.boutme, .boutme {
   font-family: 'lt_perfume' !important;
   font-weight: lighter;
-  font-size:300px;
-  display: flex;
-  top: 16px;
-  justify-content: center;
+  font-size: 120px;
   text-align: center;
-  padding: 40px 0;
-  margin-bottom: 20px;
+  margin: 0 0 30px 0;
   color: #000;
-  align-self: center;
   width: 100%;
 }
 
 p {
   font-family: 'Inter', sans-serif;
-  font-size: 45px;
   margin: 0;
   display: inline;
   line-height: 1;
@@ -55,10 +46,28 @@ p {
 
 .name-intro {
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   gap: 10px;
   flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.name-intro p {
+  font-size: 32px;
+}
+
+.center-name {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 40px;
+  margin-top: 0;
+  text-align: center;
 }
 
 .name {
@@ -72,14 +81,34 @@ p {
 
 .description {
   font-family: 'Inter', sans-serif;
-  font-size: 10px;
-  text-align: justify;
-  margin-top: 30px;
+  text-align: left;
+  margin-top: 18px;
  
 }
 
 .description p {
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-size: 22px;
+  line-height: 1.55;
   margin: 0;
+  text-align: justify;
+}
+
+.dynamic-content {
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.dynamic-content p, #dynamic-info {
+  font-family: 'Inter', sans-serif;
+  font-size: 22px !important;
+  line-height: 1.55;
+  margin: 0;
+  color: #000;
+  text-align: justify;
+  max-width: 100%;
 }
 
 a, span {
@@ -108,18 +137,22 @@ a, span {
 
 .about-content {
   display: flex;
-  gap: 110px;
-  align-items: flex-start;
+  gap: 80px; 
+  align-items: center; /* Ensures the picture and the text are vertically centered relative to each other */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  justify-content: flex-start;
-  padding-left: 40px;
+  justify-content: center;
+  padding: 40px 30px;
+  flex-wrap: wrap; /* Allows wrapping on smaller screens so it doesn't force a giant zoom */
 }
 
 .about-text-content {
-  flex: 0 1 auto;
-  max-width: 500px;
+  flex: 1;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .about-image {
@@ -127,37 +160,145 @@ a, span {
 }
 
 .profile-photo {
-  width: 450px;
-  height: 520px;
+  width: 400px;
+  height: 480px;
   border-radius: 10px;
   object-fit: cover;
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
-  transform: scale(1.30);
-  transition: transform 0.3s ease;
+  margin-top: 20px; /* Adjust spacing to keep it balanced */
 }
 
 .projects {
   background: #fcfcfc;
   width: 100%;
   min-height: 60vh;
-  padding: 60px 20px;
+  padding: 60px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .prj {
   font-family: 'lt_perfume' !important;
   font-weight: lighter;
-  font-size: 300px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  padding: 40px 0;
-  margin-bottom: 20px;
+  font-size: 150px; /* Scaled down the giant title */
+  text-align: center; /* keep headings consistent across sections */
+  margin: 0 0 50px 0;
   color: #000;
   width: 100%;
+}
+
+
+/* Projects Grid and Cards */
+.projects-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
+  width: 100%;
+  max-width: 1400px; /* Made the parent container wider */
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 20px;
+  width: calc(50% - 20px);
+  min-width: 450px; /* Forces cards to be significantly wide */
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+}
+
+.project-image-container {
+  width: 100%;
+  height: 360px; /* Made the picture height significantly taller */
+  background: #eaeaea; /* fallback color if no image */
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s ease;
+}
+
+.project-card:hover .project-img {
+  transform: scale(1.05);
+}
+
+.project-details {
+  padding: 35px 35px; /* Added more padding to make the bottom half larger too */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Increased the gap so content isn't squished */
+}
+
+.project-title {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  margin: 0;
+  color: #111;
+}
+
+.project-status {
+  font-family: 'Inter', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 5px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  width: max-content;
+}
+
+.project-status.completed {
+  background-color: #e6f6ee;
+  color: #1b8a4f;
+  border: 1px solid #1b8a4f;
+}
+
+.project-status.ongoing {
+  background-color: #fff3cd;
+  color: #cda81f;
+  border: 1px solid #cda81f;
+}
+
+.project-desc {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  margin: 0;
+  text-align: left;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 5px;
+}
+
+.tech-tag {
+  background: #f1f1f1;
+  color: #333;
+  font-family: 'Inter', sans-serif;
+  font-size: 13px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid #e0e0e0;
 }
 
 .moreinfo {
@@ -166,6 +307,87 @@ a, span {
   padding: 60px 40px;
   background: #fcfcfc;
   display: block;
+}
+
+.compact-info {
+  width: 100%;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  order: 1;
+}
+
+.info-buttons {
+  display: none;
+}
+
+.arrow-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 15px;
+  margin-top: 0;
+}
+
+.arrow-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1px solid #d0d0d0;
+  background: #fafafa;
+  color: #222;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow-btn:hover {
+  background: #f2f2f2;
+  border-color: #999;
+}
+
+.arrow-btn.prev-btn {
+  margin-right: 6px;
+}
+
+.arrow-btn.next-btn {
+  margin-left: 6px;
+}
+
+.tab-name {
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+  color: #000;
+  font-weight: 400;
+  text-transform: capitalize;
+  min-width: 100px;
+  text-align: center;
+}
+
+.info-btn {
+  display: none;
+}
+
+.info-panels {
+  min-height: 0;
+}
+
+.info-panel {
+  display: none;
+}
+
+.info-panel.active {
+  display: block;
+}
+
+.info-panel p {
+  display: none;
 }
 
 .moreinfo h4 {
@@ -182,13 +404,17 @@ a, span {
   color: #000;
   line-height: 1.6;
   margin: 10px 0;
+  text-align: center;
 }
 
 .skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  gap: 30px;
-  margin: 30px 0 60px 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 15px 0;
+  align-items: center;
+  justify-content: center;
 }
 
 .skill-item {
@@ -196,10 +422,12 @@ a, span {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 20px 10px;
+  padding: 12px 10px;
   background: transparent;
   border-radius: 12px;
   transition: all 0.3s ease;
+  flex-shrink: 0;
+  min-width: 90px;
 }
 
 .skill-item:hover {
@@ -207,16 +435,16 @@ a, span {
 }
 
 .skill-logo {
-  width: 80px;
-  height: 80px;
+  width: 60px;
+  height: 60px;
   object-fit: contain;
-  margin-bottom: 10px;
+  margin-bottom: 6px;
   filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
 }
 
 .skill-item p {
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #333;
   margin: 0;
   font-weight: 500;
@@ -259,6 +487,50 @@ a, span {
 .experience-item p:last-child {
   font-size: 14px;
   color: #666;
+}
+
+@media (max-width: 1024px) {
+  .about-content {
+    gap: 60px;
+    padding-left: 0;
+    justify-content: center;
+  }
+
+  .profile-photo {
+    width: 320px;
+    height: 390px;
+    transform: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .name-intro {
+    justify-content: center;
+  }
+
+  .info-buttons {
+    justify-content: center;
+  }
+
+  .description {
+    text-align: center;
+  }
+
+  .compact-info {
+    margin-top: 28px;
+    max-width: 100%;
+  }
+
+  .info-btn {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
 }
 
 

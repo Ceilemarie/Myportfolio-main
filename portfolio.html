@@ -25,71 +25,60 @@
             <div class="name-intro">
                 <p>hi, my name is</p>
                 <span class="name">Ceile Marie Guce</span>
-                
             </div>
-            <div class="description">
-                <p>I am a 3rd year Computer Science student specializing in Machine Learning<br>with experience in creating responsive<br>and user-friendly websites.</p>
+
+            <div class="moreinfo compact-info">
+                <div class="arrow-nav">
+                    <button class="arrow-btn prev-btn" id="prev-btn" aria-label="Previous info">‹</button>
+                    <span class="tab-name" id="tab-name">Description</span>
+                    <button class="arrow-btn next-btn" id="next-btn" aria-label="Next info">›</button>
+                </div>
+                <div class="dynamic-content">
+                    <p id="dynamic-info">I am a 3rd year Computer Science student specializing in Machine Learning<br>with experience in creating responsive<br>and user-friendly websites.</p>
+                </div>
+            </div>
+
+            <div class="info-content-templates" hidden>
+                <div id="description">I am a 3rd year Computer Science student specializing in Machine Learning<br>with experience in creating responsive<br>and user-friendly websites.</div>
+                <div id="education">Bachelor of Science in Computer Science specialization in Machine Learning, National University-Lipa (2023-2027)</div>
+                <div id="experience">Freelance Web Developer - Built a website for Capstone Project of Grade 12 students (PlastiScan).<br>Social Media Manager, CODECS (2024-2026).<br>BSCS Model, NULipa (2023).<br>Representative, GIP (2025-2026).</div>
+                <div id="skills">
+                    <div class="skills-container">
+                        <div class="skill-item">
+                            <img src="programming_logo/html.webp" alt="HTML5" class="skill-logo">
+                            <p>HTML5</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="programming_logo/css.png" alt="CSS3" class="skill-logo">
+                            <p>CSS3</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="programming_logo/javascript.webp" alt="JavaScript" class="skill-logo">
+                            <p>JavaScript</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="programming_logo/python.png" alt="Python" class="skill-logo">
+                            <p>Python</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="programming_logo/google colab.png" alt="Google Colab" class="skill-logo">
+                            <p>Google Colab</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="programming_logo/Figma.png" alt="Figma" class="skill-logo">
+                            <p>Figma</p>
+                        </div>
+                        <div class="skill-item">
+                            <img src="programming_logo/mysql.png" alt="SQL" class="skill-logo">
+                            <p>SQL</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="achievements">Leadership roles in student organizations and academic activities.<br>Selected as BSCS Model, National University Lipa (2023).<br>Contributed to multiple collaborative and client-facing projects.</div>
             </div>
         </div>
     </div>
 
-</section>
-
-<section class="moreinfo">
-    <h4>Education</h4>
-    <p>Bachelor of Science in Computer Science specialization in Machine Learning, National University-Lipa (2023-2027)</p>
-
-    <h4>Experience</h4>
-    <div class="experience-container">
-        <div class="experience-item">
-            <p><strong>Freelance Web Developer</strong></p>
-            <p>Build a website for Capstone Project of Grade 12 students (PlastiScan)</p>
-        </div>
-        <div class="experience-item">
-            <p><strong>Social Media Manager, CODECS</strong></p>
-            <p>2024-2026</p>
-        </div>
-        <div class="experience-item">
-            <p><strong>BSCS Model, NULipa</strong></p>
-            <p>2023</p>
-        </div>
-        <div class="experience-item">
-            <p><strong>Representative, GIP</strong></p>
-            <p>2025-2026</p>
-        </div>
-    </div>
-
-    <h4>Skills</h4>
-    <div class="skills-container">
-        <div class="skill-item">
-            <img src="programming_logo/html.webp" alt="HTML5" class="skill-logo">
-            <p>HTML5</p>
-        </div>
-        <div class="skill-item">
-            <img src="programming_logo/css.png" alt="CSS3" class="skill-logo">
-            <p>CSS3</p>
-        </div>
-        <div class="skill-item">
-            <img src="programming_logo/javascript.webp" alt="JavaScript" class="skill-logo">
-            <p>JavaScript</p>
-        </div>
-        <div class="skill-item">
-            <img src="programming_logo/python.png" alt="Python" class="skill-logo">
-            <p>Python</p>
-        </div>
-        <div class="skill-item">
-            <img src="programming_logo/google colab.png" alt="Google Colab" class="skill-logo">
-            <p>Google Colab</p>
-        </div>
-        <div class="skill-item">
-            <img src="programming_logo/Figma.png" alt="Figma" class="skill-logo">
-            <p>Figma</p>
-        </div>
-        <div class="skill-item">
-            <img src="programming_logo/mysql.png" alt="SQL" class="skill-logo">
-            <p>SQL</p>
-        </div>
-    </div>
 </section>
 
 
@@ -98,6 +87,86 @@
 
 <section id="csprj" class="projects">
   <h2 class="prj">My Projects</h2>
+  
+  <div class="projects-grid">
+      <!-- Project 1 -->
+      <div class="project-card">
+          <div class="project-image-container">
+              <!-- Change the src to your actual project image -->
+              <img src="images/ecogive.png" alt="Project 1" class="project-img">
+          </div>
+          <div class="project-details">
+              <h3 class="project-title">ECOGIVE SMART DONATIONS</h3>
+              <span class="project-status completed">Status: Completed</span>
+              <p class="project-desc">This is a short description of the project. You can explain what it does and who it's for right here.</p>
+              
+              <div class="project-tech">
+                  <span class="tech-tag">JAVA</span>
+                  <span class="tech-tag">Canva</span>
+                  <span class="tech-tag">Android Studio</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+          <div class="project-image-container">
+              <img src="images/digitalpet.png" alt="Project 2" class="project-img">
+          </div>
+          <div class="project-details">
+              <h3 class="project-title">Digital Pet</h3>
+              <span class="project-status ongoing">Status: Completed</span>
+              <p class="project-desc">A brief description of this completed project and the main objectives.</p>
+              
+              <div class="project-tech">
+                  <span class="tech-tag">JAVA</span>
+                  <span class="tech-tag">Netbeans</span>
+              </div>
+          </div>
+      </div>
+
+      <!-- Project 3-->
+      <div class="project-card">
+          <div class="project-image-container">
+              <img src="images/a&f.png" alt="Project 3" class="project-img">
+          </div>
+          <div class="project-details">
+              <h3 class="project-title">A&F CHOCOLATES SHOP</h3>
+              <span class="project-status ongoing">Status: Completed</span>
+              <p class="project-desc">A brief description of this completed project and the main objectives.</p>
+              
+              <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Figma</span>
+                  <span class="tech-tag">MySQL</span>
+                  <span class="tech-tag">PHP</span>
+              </div>
+          </div>
+      </div>
+
+       <!-- Project 4-->
+       <div class="project-card">
+          <div class="project-image-container">
+              <img src="images/automata.png" alt="Project 4" class="project-img">
+          </div>
+          <div class="project-details">
+              <h3 class="project-title">Automata Theory Operators</h3>
+              <span class="project-status ongoing">Status: Completed</span>
+              <p class="project-desc">A brief description of this completed project and the main objectives.</p>
+              
+              <div class="project-tech">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Python</span>
+              </div>
+          </div>
+      </div>
+
+
+  </div>
 </section>
 
     
