@@ -207,8 +207,9 @@ a, span {
   border: 1px solid rgba(255, 255, 255, 0.7);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
   border-radius: 20px;
-  width: calc(50% - 20px);
-  min-width: 450px; /* Forces cards to be significantly wide */
+  width: calc(33.333% - 27px);
+  min-width: 320px;
+  min-height: 550px;
   display: flex;
   flex-direction: column;
   overflow: hidden;
@@ -222,8 +223,8 @@ a, span {
 
 .project-image-container {
   width: 100%;
-  height: 360px; /* Made the picture height significantly taller */
-  background: #eaeaea; /* fallback color if no image */
+  height: 280px; 
+  background: #eaeaea; 
   overflow: hidden;
 }
 
