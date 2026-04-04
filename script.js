@@ -33,3 +33,31 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateContent();
 });
+
+// Certificate Modal Logic
+function openCertModal(element) {
+  var modal = document.getElementById('certModal');
+  var modalImg = document.getElementById('img01');
+  var captionText = document.getElementById('caption');
+  
+  // Find the image and title inside the clicked cert-card
+  var img = element.querySelector('.cert-img');
+  var title = element.querySelector('.cert-title');
+  
+  modal.style.display = "block";
+  modalImg.src = img.src;
+  captionText.innerHTML = title.innerHTML;
+  
+  // Add a small anti-right-click listener for safety just in case
+  modalImg.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+  }, false);
+}
+
+function closeCertModal(event) {
+  var modal = document.getElementById('certModal');
+  // Only close if they click the background, close button, but NOT the image itself
+  if (event.target.id === 'certModal' || event.target.className === 'close') {
+      modal.style.display = "none";
+  }
+}
