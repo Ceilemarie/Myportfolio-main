@@ -1,4 +1,43 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // Hamburger Menu Toggle
+  const hamburger = document.getElementById('hamburger');
+  const topLeftNav = document.querySelector('.top-left-nav');
+  const topRightNav = document.querySelector('.top-right-nav');
+  
+  if (hamburger) {
+    hamburger.addEventListener('click', function() {
+      hamburger.classList.toggle('active');
+      
+      // Create mobile menu if it doesn't exist
+      let mobileMenu = document.getElementById('mobile-menu');
+      if (!mobileMenu) {
+        mobileMenu = document.createElement('nav');
+        mobileMenu.id = 'mobile-menu';
+        mobileMenu.className = 'mobile-menu';
+        
+        // Combine left and right nav links
+        const allLinks = document.querySelectorAll('.top-left-nav .nav-link, .top-right-nav .nav-link');
+        allLinks.forEach(link => {
+          const clone = link.cloneNode(true);
+          mobileMenu.appendChild(clone);
+        });
+        
+        document.querySelector('.main-header').parentNode.insertBefore(mobileMenu, document.querySelector('.main-header').nextSibling);
+      }
+      
+      mobileMenu.classList.toggle('active');
+      
+      // Close menu when link is clicked
+      const mobileLinks = mobileMenu.querySelectorAll('.nav-link');
+      mobileLinks.forEach(link => {
+        link.addEventListener('click', function() {
+          hamburger.classList.remove('active');
+          mobileMenu.classList.remove('active');
+        });
+      });
+    });
+  }
+
   var tabs = ['description', 'education', 'experience', 'skills', 'achievements'];
   var tabNames = ['Description', 'Education', 'Experience', 'Skills', 'Achievements'];
   var currentTabIndex = 0;
