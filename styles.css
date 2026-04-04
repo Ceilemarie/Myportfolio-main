@@ -57,6 +57,7 @@ p {
   gap: 10px;
   flex-wrap: wrap;
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 .name-intro p {
@@ -88,8 +89,7 @@ p {
 .description {
   font-family: 'Inter', sans-serif;
   text-align: justify !important; text-justify: inter-word !important;
-  margin-top: 18px;
- 
+  margin-top: -30px;
 }
 
 .description p {
@@ -102,7 +102,7 @@ p {
 }
 
 .dynamic-content {
-  margin-top: 15px;
+  margin-top: 0px;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -117,7 +117,7 @@ p {
     font-family: 'Inter', sans-serif;
     font-size: 14.5px;
     line-height: 1.6;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     color: #000;
     text-align: justify !important; text-justify: inter-word !important;
     text-justify: inter-word;
@@ -379,13 +379,14 @@ a, span {
 
 .about-content {
   display: flex;
-  gap: 80px; 
+  top:20px;
+  gap: 40px; 
   align-items: flex-start; /* Image stays fixed at top, doesn't move with text */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
   justify-content: center;
-  padding: 40px 30px;
+  padding: 20px 30px;
   flex-wrap: wrap; /* Allows wrapping on smaller screens so it doesn't force a giant zoom */
 }
 
@@ -395,6 +396,7 @@ a, span {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin-top: -20px;
 }
 
 .about-image {
@@ -554,15 +556,17 @@ a, span {
 .moreinfo {
   font-family: 'Inter', sans-serif;
   width: 100%;
-  padding: 60px 40px;
+  padding: 10px 40px 30px 40px;
   background: #fcfcfc;
   display: block;
+  margin-top: -20px;
 }
 
 .compact-info {
   width: 100%;
   max-width: 100%;
   margin: 0;
+  margin-top: -20px;
   padding: 0;
   order: 1;
 }
@@ -576,7 +580,7 @@ a, span {
   align-items: center;
   justify-content: center;
   gap: 16px;
-  margin-bottom: 15px;
+  margin-bottom: 20px;
   margin-top: 0;
 }
 
@@ -1228,7 +1232,7 @@ h1.socmed-intro {
     }
 
     .about-content {
-        gap: 15px;
+        gap: 40px;
         padding: 20px 15px;
     }
 
