@@ -1114,7 +1114,627 @@ h1.socmed-intro {
     letter-spacing: 0.5px;
 }
 
+/* ============================================
+   COMPREHENSIVE RESPONSIVE DESIGN
+   ============================================ */
 
+/* Ultra Small Phones (320px - 374px) */
+@media (max-width: 374px) {
+    .main-header {
+        height: 80px;
+        padding: 0 15px;
+    }
 
+    .top-left-nav, .top-right-nav {
+        gap: 12px;
+        flex: 0.8;
+    }
 
+    .top-left-nav {
+        padding-right: 20px;
+    }
+
+    .top-right-nav {
+        padding-left: 20px;
+    }
+
+    .nav-link {
+        font-size: 12px;
+    }
+
+    .logo-img {
+        height: 45px;
+    }
+
+    .social-icons {
+        right: 15px;
+        gap: 8px;
+    }
+
+    .social-circle {
+        width: 35px;
+        height: 35px;
+    }
+
+    .social-circle svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    h1.title, .title {
+        font-size: 100px;
+        padding: 10px 0;
+    }
+
+    h2.boutme, .boutme, h1.certs-intro, .certs-intro, h2.prj {
+        font-size: 60px;
+        margin: 0 0 20px 0;
+    }
+
+    .about-content {
+        gap: 20px;
+        padding: 20px 15px;
+    }
+
+    .profile-photo {
+        width: 200px;
+        height: 240px;
+    }
+
+    .name-intro p {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .projects-grid, .certs-grid {
+        gap: 20px;
+        width: 100%;
+    }
+
+    .project-card, .cert-card {
+        width: 100%;
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .project-details, .cert-details {
+        padding: 20px;
+    }
+
+    .project-title, .cert-title {
+        font-size: 18px;
+    }
+
+    .project-image-container {
+        height: 200px;
+    }
+
+    .cert-image-container {
+        height: 250px;
+    }
+
+    .compact-info {
+        padding: 15px;
+    }
+
+    .arrow-btn {
+        width: 28px;
+        height: 28px;
+        font-size: 14px;
+    }
+
+    .tab-name {
+        font-size: 14px;
+    }
+
+    h1.socmed-intro {
+        font-size: 80px;
+        margin: 0 0 30px 0;
+    }
+
+    .socmed-container {
+        padding: 40px 15px;
+    }
+
+    .socmed-card {
+        height: 250px;
+    }
+
+    .contact-container {
+        padding: 40px 15px;
+    }
+
+    .contact-form {
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .submit-btn {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .footer {
+        padding: 25px 15px;
+    }
+
+    .footer p {
+        font-size: 12px;
+    }
+}
+
+/* Small Phones (375px - 480px) */
+@media (min-width: 375px) and (max-width: 480px) {
+    .main-header {
+        height: 85px;
+        padding: 0 20px;
+    }
+
+    .top-left-nav, .top-right-nav {
+        gap: 15px;
+    }
+
+    .top-left-nav {
+        padding-right: 30px;
+    }
+
+    .top-right-nav {
+        padding-left: 30px;
+    }
+
+    .nav-link {
+        font-size: 13px;
+        font-weight: 400;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+
+    .social-icons {
+        right: 20px;
+        gap: 10px;
+    }
+
+    .social-circle {
+        width: 38px;
+        height: 38px;
+    }
+
+    .social-circle svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    h1.title, .title {
+        font-size: 120px;
+        padding: 15px 0;
+    }
+
+    h2.boutme, .boutme, h1.certs-intro, .certs-intro, h2.prj {
+        font-size: 70px;
+        margin: 0 0 25px 0;
+    }
+
+    .about-content {
+        gap: 30px;
+        padding: 25px 20px;
+    }
+
+    .profile-photo {
+        width: 240px;
+        height: 290px;
+    }
+
+    .name-intro p {
+        font-size: 22px;
+    }
+
+    .name {
+        font-size: 45px;
+    }
+
+    .dynamic-content p {
+        font-size: 13px;
+    }
+
+    .projects-grid, .certs-grid {
+        gap: 25px;
+        padding: 0 15px;
+    }
+
+    .project-card, .cert-card {
+        width: 100%;
+        min-width: auto;
+        min-height: auto;
+    }
+
+    .project-details, .cert-details {
+        padding: 22px;
+    }
+
+    .project-title, .cert-title {
+        font-size: 20px;
+    }
+
+    .project-image-container {
+        height: 220px;
+    }
+
+    .cert-image-container {
+        height: 270px;
+    }
+
+    .compact-info {
+        padding: 20px;
+    }
+
+    h1.socmed-intro {
+        font-size: 90px;
+        margin: 0 0 35px 0;
+    }
+
+    .socmed-container {
+        padding: 50px 20px;
+    }
+
+    .socmed-card {
+        height: 270px;
+    }
+
+    .contact-container {
+        padding: 50px 20px;
+    }
+
+    .contact-form {
+        padding: 25px;
+    }
+
+    .footer {
+        padding: 30px 20px;
+    }
+
+    .footer p {
+        font-size: 14px;
+    }
+}
+
+/* Tablets & Medium Phones (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    .main-header {
+        height: 85px;
+        padding: 0 25px;
+    }
+
+    .top-left-nav, .top-right-nav {
+        gap: 20px;
+        height: 45px;
+    }
+
+    .top-left-nav {
+        padding-right: 35px;
+        justify-content: flex-end;
+    }
+
+    .top-right-nav {
+        padding-left: 35px;
+        justify-content: flex-start;
+    }
+
+    .nav-link {
+        font-size: 14px;
+    }
+
+    .logo-img {
+        height: 55px;
+    }
+
+    .social-icons {
+        right: 25px;
+        gap: 12px;
+    }
+
+    .social-circle {
+        width: 40px;
+        height: 40px;
+    }
+
+    .social-circle svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    h1.title, .title {
+        font-size: clamp(120px, 25vw, 200px);
+    }
+
+    h2.boutme, .boutme, h1.certs-intro, .certs-intro, h2.prj {
+        font-size: clamp(70px, 12vw, 120px);
+    }
+
+    .about-content {
+        gap: 40px;
+        padding: 40px 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile-photo {
+        width: 280px;
+        height: 340px;
+    }
+
+    .name-intro p {
+        font-size: 24px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .dynamic-content {
+        min-height: 300px;
+    }
+
+    .dynamic-content p, #dynamic-info p {
+        font-size: 14px;
+    }
+
+    .projects-grid, .certs-grid {
+        gap: 30px;
+        padding: 0 20px;
+        justify-content: center;
+    }
+
+    .project-card, .cert-card {
+        width: calc(50% - 15px);
+        min-width: auto;
+    }
+
+    .project-image-container {
+        height: 250px;
+    }
+
+    .cert-image-container {
+        height: 300px;
+    }
+
+    .project-title, .cert-title {
+        font-size: 22px;
+    }
+
+    .prj {
+        font-size: 100px;
+    }
+
+    h1.socmed-intro {
+        font-size: 100px;
+        margin: 0 0 40px 0;
+    }
+
+    .socmed-container {
+        padding: 60px 20px;
+    }
+
+    .socmed-card {
+        width: calc(50% - 15px);
+        height: 300px;
+    }
+
+    .contact-container {
+        padding: 60px 25px;
+    }
+
+    .contact-form {
+        padding: 30px;
+        max-width: 100%;
+    }
+
+    .contact-title {
+        font-size: clamp(60px, 10vw, 100px);
+    }
+
+    .footer {
+        padding: 35px 25px;
+    }
+
+    .footer p {
+        font-size: 16px;
+    }
+
+    .moreinfo {
+        padding: 40px 20px;
+    }
+}
+
+/* Tablets - iPad size (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-header {
+        height: 90px;
+        padding: 0 30px;
+    }
+
+    .top-left-nav, .top-right-nav {
+        gap: 25px;
+    }
+
+    .top-left-nav {
+        padding-right: 50px;
+    }
+
+    .top-right-nav {
+        padding-left: 50px;
+    }
+
+    .nav-link {
+        font-size: 15px;
+    }
+
+    .logo-img {
+        height: 60px;
+    }
+
+    .about-content {
+        gap: 60px;
+        padding: 40px 30px;
+    }
+
+    .profile-photo {
+        width: 300px;
+        height: 360px;
+    }
+
+    h1.title {
+        font-size: 180px;
+    }
+
+    h2.boutme, h2.prj {
+        font-size: 100px;
+    }
+
+    h1.certs-intro {
+        font-size: 100px;
+    }
+
+    .name-intro p {
+        font-size: 28px;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .dynamic-content {
+        min-height: 350px;
+    }
+
+    .projects-grid, .certs-grid {
+        gap: 35px;
+        padding: 0 30px;
+    }
+
+    .project-card, .cert-card {
+        width: calc(50% - 17.5px);
+    }
+
+    .prj {
+        font-size: 120px;
+    }
+
+    h1.socmed-intro {
+        font-size: 120px;
+        margin: 0 0 50px 0;
+    }
+
+    .socmed-container {
+        padding: 70px 30px;
+    }
+
+    .socmed-card {
+        width: calc(50% - 15px);
+        height: 320px;
+    }
+
+    .contact-container {
+        padding: 70px 30px;
+    }
+
+    .contact-title {
+        font-size: 100px;
+    }
+
+    .footer {
+        padding: 40px 30px;
+    }
+
+    .moreinfo {
+        padding: 60px 30px;
+    }
+}
+
+/* Large Screens & Desktops (1025px and above) */
+@media (min-width: 1025px) {
+    .main-header {
+        height: 90px;
+        padding: 0 40px;
+    }
+
+    .nav-link {
+        font-size: 16px;
+    }
+
+    h1.title {
+        font-size: 250px;
+    }
+
+    h2.boutme, h2.prj {
+        font-size: 120px;
+    }
+
+    h1.certs-intro {
+        font-size: 120px;
+    }
+
+    .name-intro p {
+        font-size: 32px;
+    }
+
+    .name {
+        font-size: 80px;
+    }
+
+    .projects-grid, .certs-grid {
+        gap: 40px;
+    }
+
+    .project-card, .cert-card {
+        width: calc(33.333% - 27px);
+    }
+
+    .prj {
+        font-size: 150px;
+    }
+
+    h1.socmed-intro {
+        font-size: 150px;
+    }
+
+    .socmed-card {
+        width: calc(25% - 22.5px);
+        height: 300px;
+    }
+
+    .contact-title {
+        font-size: 120px;
+    }
+
+    .moreinfo {
+        padding: 80px 40px;
+    }
+}
+
+/* Extra Large Screens (1440px and above) */
+@media (min-width: 1440px) {
+    .projects-grid, .certs-grid, .socmed-grid {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+
+    .moreinfo {
+        padding: 80px 60px;
+    }
+
+    .project-details, .cert-details {
+        padding: 40px;
+    }
+}
 
