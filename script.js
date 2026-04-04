@@ -61,3 +61,16 @@ function closeCertModal(event) {
       modal.style.display = "none";
   }
 }
+
+function openSocmedModal(element) {
+  var modal = document.getElementById('certModal');
+  var modalImg = document.getElementById('img01');
+  var captionText = document.getElementById('caption');
+  
+  var img = element.querySelector('.socmed-img');
+  
+  modal.style.display = 'block';
+  modalImg.src = img.src;
+  captionText.innerHTML = ''; // no caption needed for socmed
+}
+

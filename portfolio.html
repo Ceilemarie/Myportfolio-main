@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -8,6 +8,40 @@
  <script src="script.js"></script>
 </head>
 <body>
+
+
+<header class="main-header">
+    <nav class="top-left-nav">
+        <a href="#introduction" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About Me</a>
+        <a href="#csprj" class="nav-link">Projects</a>
+    </nav>
+
+    <!-- Top Center Logo -->
+    <div class="top-center-logo">
+        <img src="images/faith.png" alt="Faith Logo" class="logo-img">
+    </div>
+
+    <nav class="top-right-nav">
+        <a href="#Certs" class="nav-link">Certificates</a>    
+        <a href="#socmed-section" class="nav-link">Socmed</a>
+        <a href="#contact-section" class="nav-link">Contact</a>
+    </nav>
+
+    <!-- Social Icons at Top Right -->
+    <div class="social-icons">
+        <a href="https://www.linkedin.com/in/ceile-marie-g-1647b1299/" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+            </svg>
+        </a>
+        <a href="https://github.com/Ceilemarie" target="_blank" rel="noopener noreferrer" class="social-circle" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/>
+            </svg>
+        </a>
+    </div>
+</header>
 
 
 <section id="introduction" class="introc">
@@ -42,14 +76,35 @@
                     <button class="arrow-btn next-btn" id="next-btn" aria-label="Next info">›</button>
                 </div>
                 <div class="dynamic-content">
-                    <p id="dynamic-info">I am a 3rd year Computer Science student specializing in Machine Learning<br>with experience in creating responsive<br>and user-friendly websites.</p>
+                    <div id="dynamic-info">
+                        <p style="text-align: justify !important; margin-bottom: 20px; display: block;">I am a 3rd-year Computer Science student at NU Lipa specializing in Machine Learning. My journey in tech is fueled by a unique blend of logic and creativity. While my core focus is now on the world of Artificial Intelligence, I have a deep-rooted passion for Frontend Development and UI/UX Design. I believe that powerful technology should not only be smart but also accessible and visually engaging. This is why I love using AI tools, not as a shortcut, but as a way to enhance my workflow and adapt to the ever-evolving digital landscape.</p>
+                        <p style="text-align: justify !important; margin-bottom: 20px; display: block;">As a scholar and a consistent team lead, I’ve learned that the best innovations come from collaboration. I take pride in leading my team through complex projects, ensuring that our collective 'art' meets the technical standards of the industry. Whether I am deep-diving into Python, training models to solve real-world problems, or polishing a responsive interface, I am driven by a constant hunger to improve.</p>
+                        <p style="text-align: justify !important; margin-bottom: 20px; display: block;">My ultimate goal is to become a Machine Learning Engineer who creates 'creative tech'—systems that are as innovative as they are intuitive. Every day, I am motivated to fill my GitHub graph with green, not just for the sake of the streak, but as a testament to my commitment to learning and building. I am currently seeking internship and career opportunities where I can contribute my skills, learn, lead with passion, and continue growing alongside the best in the industry.</p>
+                    </div>
                 </div>
             </div>
 
             <div class="info-content-templates" hidden>
-                <div id="description">I am a 3rd year Computer Science student specializing in Machine Learning<br>with experience in creating responsive<br>and user-friendly websites.</div>
-                <div id="education">Bachelor of Science in Computer Science specialization in Machine Learning, National University-Lipa (2023-2027)</div>
-                <div id="experience">Freelance Web Developer - Built a website for Capstone Project of Grade 12 students (PlastiScan).<br>Social Media Manager, CODECS (2024-2026).<br>BSCS Model, NULipa (2023).<br>Representative, GIP (2025-2026).</div>
+                <div id="description">
+                    <p style="text-align: justify !important; margin-bottom: 20px; display: block;">I am a 3rd-year Computer Science student at NU Lipa specializing in Machine Learning. My journey in tech is fueled by a unique blend of logic and creativity. While my core focus is now on the world of Artificial Intelligence, I have a deep-rooted passion for Frontend Development and UI/UX Design. I believe that powerful technology should not only be smart but also accessible and visually engaging. This is why I love using AI tools, not as a shortcut, but as a way to enhance my workflow and adapt to the ever-evolving digital landscape.</p>
+                    <p style="text-align: justify !important; margin-bottom: 20px; display: block;">As a scholar and a consistent team lead, I’ve learned that the best innovations come from collaboration. I take pride in leading my team through complex projects, ensuring that our collective 'art' meets the technical standards of the industry. Whether I am deep-diving into Python, training models to solve real-world problems, or polishing a responsive interface, I am driven by a constant hunger to improve.</p>
+                    <p style="text-align: justify !important; margin-bottom: 20px; display: block;">My ultimate goal is to become a Machine Learning Engineer who creates 'creative tech'—systems that are as innovative as they are intuitive. Every day, I am motivated to fill my GitHub graph with green, not just for the sake of the streak, but as a testament to my commitment to learning and building. I am currently seeking internship and career opportunities where I can contribute my skills, learn, lead with passion, and continue growing alongside the best in the industry.</p>
+                </div>
+                
+                <div id="education">
+                    <ul>
+                        <li>Bachelor of Science in Computer Science specialization in Machine Learning, National University-Lipa (2023-2027)</li>
+                        <li>Fernando Air Base Integrated National High School (2017-2023)</li>
+                    </ul>
+                </div>
+                <div id="experience">
+                    <ul>
+                        <li>Freelance Web Developer - Built a website for Capstone Project of Grade 12 students (PlastiScan).</li>
+                        <li>Social Media Manager, CODECS (2024-2026).</li>
+                        <li>BSCS Model for Marketing, NULipa (2023).</li>
+                        <li>Representative, GIP (2025-2026).</li>
+                    </ul>
+                </div>
                 <div id="skills">
                     <div class="skills-container">
                         <div class="skill-item">
@@ -82,7 +137,15 @@
                         </div>
                     </div>
                 </div>
-                <div id="achievements">Leadership roles in student organizations and academic activities.<br>Selected as BSCS Model, National University Lipa (2023).<br>Contributed to multiple collaborative and client-facing projects.</div>
+                <div id="achievements">
+                    <ul>
+                        <li>University Academic Excellence Benefit Scholar @ National University Lipa.</li>
+                        <li>Google DataCamp Donates Scholar (2026).</li>
+                        <li>Dean's Lister (Rank 3 | Term 2)</li>
+                        <li>Selected as BSCS Model for Marketing, National University Lipa (2023).</li>
+                        <li>Contributed to collaborative and client-facing project.</li>
+                    </ul>
+                </div>
             </div>
         </div>
     </div>
@@ -106,15 +169,16 @@
           <div class="project-details">
               <h3 class="project-title">ECOGIVE SMART DONATIONS</h3>
               <span class="project-status completed">Status: Completed</span>
-              <p class="project-desc">This is a short description of the project. You can explain what it does and who it's for right here.</p>
+              <p class="project-desc"> A socially conscious mobile platform that enables "passive" philanthropy. Instead of traditional out-of-pocket payments, the app generates funding through integrated advertisement revenue. Users contribute to environmental causes simply by engaging with ads, making charitable giving accessible to everyone regardless of their financial status.</p>
               
               <div class="project-tech">
-                  <span class="tech-tag">JAVA</span>
-                  <span class="tech-tag">Canva</span>
-                  <span class="tech-tag">Android Studio</span>
-              </div>
-          </div>
-      </a>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" class="tech-logo-img">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/canva/canva-original.svg" alt="Canva" class="tech-logo-img">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/androidstudio/androidstudio-original.svg" alt="Android Studio" class="tech-logo-img">
+                  <img src="https://img.shields.io/badge/Google_Ads_API-4285F4?logo=googleads&logoColor=white" alt="Google Ads API" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
+                </div>
+            </div>
+        </a>
 
       <!-- Project 2 -->
       <a href="https://github.com/Ceilemarie/DigitalPet" target="_blank" rel="noopener noreferrer" class="project-card">
@@ -124,11 +188,11 @@
           <div class="project-details">
               <h3 class="project-title">Digital Pet</h3>
               <span class="project-status ongoing">Status: Completed</span>
-              <p class="project-desc">A brief description of this completed project and the main objectives.</p>
+              <p class="project-desc">An interactive project featuring a virtual companion(pokemon dedenne) that users must nurture. The project implements game logic to manage the pet’s vital statistics—such as hunger, sleep, and happiness—providing a nostalgic and engaging user experience.</p>
               
               <div class="project-tech">
-                  <span class="tech-tag">JAVA</span>
-                  <span class="tech-tag">Netbeans</span>
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" alt="Java" class="tech-logo-img">
+                  <img src="https://img.shields.io/badge/NetBeans-1b6ac6?logo=apache-netbeans&logoColor=white" alt="Netbeans" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
               </div>
           </div>
       </a>
@@ -141,15 +205,15 @@
           <div class="project-details">
               <h3 class="project-title">A&F CHOCOLATES SHOP</h3>
               <span class="project-status ongoing">Status: Completed</span>
-              <p class="project-desc">A brief description of this completed project and the main objectives.</p>
+              <p class="project-desc">A full-stack e-commerce web application developed for a chocolate retailer. It features a responsive landing page, product catalog, and an intuitive ordering system designed to provide a seamless "bean-to-bar" digital shopping experience.</p>
               
               <div class="project-tech">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">Figma</span>
-                  <span class="tech-tag">MySQL</span>
-                  <span class="tech-tag">PHP</span>
+                  <img src="programming_logo/html.webp" alt="HTML" class="tech-logo-img">
+                  <img src="programming_logo/css.png" alt="CSS" class="tech-logo-img">
+                  <img src="programming_logo/javascript.webp" alt="JavaScript" class="tech-logo-img">
+                  <img src="programming_logo/Figma.png" alt="Figma" class="tech-logo-img">
+                  <img src="programming_logo/mysql.png" alt="MySQL" class="tech-logo-img">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg" alt="PHP" class="tech-logo-img">
               </div>
           </div>
       </a>
@@ -162,13 +226,13 @@
           <div class="project-details">
               <h3 class="project-title">Automata Theory Operators</h3>
               <span class="project-status ongoing">Status: Completed</span>
-              <p class="project-desc">A brief description of this completed project and the main objectives.</p>
+              <p class="project-desc">An educational web tool built to visualize and simulate complex concepts in Automata Theory. It allows users to interact with state machines and computational models, making abstract mathematical logic more accessible through interactive UI.</p>
               
               <div class="project-tech">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">Python</span>
+                  <img src="programming_logo/html.webp" alt="HTML" class="tech-logo-img">
+                  <img src="programming_logo/css.png" alt="CSS" class="tech-logo-img">
+                  <img src="programming_logo/javascript.webp" alt="JavaScript" class="tech-logo-img">
+                  <img src="programming_logo/python.png" alt="Python" class="tech-logo-img">
               </div>
           </div>
       </a>
@@ -181,14 +245,14 @@
           <div class="project-details">
               <h3 class="project-title">DigitalFocus to NeuroGate (SOFTENG 1&2)</h3>
               <span class="project-status ongoing">Status: Ongoing</span>
-              <p class="project-desc">A brief description of this ongoing project and the main objectives.</p>
+              <p class="project-desc">A specialized mobile application developed for Software Engineering courses aimed at mental wellness and cognitive focus. It utilizes machine learning classifiers to provide personalized user experiences, helping individuals manage stress and improve concentration.</p>
               
               <div class="project-tech">
-                  <span class="tech-tag">Kotlin (Android Studio)</span>
-                  <span class="tech-tag">Firebase</span>
-                  <span class="tech-tag">Figma</span>
-                  <span class="tech-tag">Support Vector Machine (SVM)</span>
-                  <span class="tech-tag">Decision Tree</span>
+                  <img src="https://img.shields.io/badge/Kotlin-B125EA?logo=kotlin&logoColor=white" alt="Kotlin" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg" alt="Firebase" class="tech-logo-img">
+                  <img src="programming_logo/Figma.png" alt="Figma" class="tech-logo-img">
+                  <img src="https://img.shields.io/badge/SVM-FF6F00?logo=scikit-learn&logoColor=white" alt="SVM" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
+                  <img src="https://img.shields.io/badge/Decision_Tree-4CAF50?logo=scikitlearn&logoColor=white" alt="Decision Tree" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
               </div>
           </div>
       </a>
@@ -201,18 +265,20 @@
           <div class="project-details">
               <h3 class="project-title">SentienceSelah Photobooth</h3>
               <span class="project-status ongoing">Status: Ongoing</span>
-              <p class="project-desc">A brief description of this ongoing project and the main objectives.</p>
-            </div>
+              <p class="project-desc">An AI-powered interactive photobooth that uses Real-Time Facial Expression Recognition to influence the digital environment. By detecting the user's current mood (e.g., happy, calm, or sad), the application dynamically shifts the booth's background to specific color gradients that match the detected emotion, creating a personalized and immersive "Sentience" experience.</p>
               <div class="project-tech">
-                  <span class="tech-tag">HTML</span>
-                  <span class="tech-tag">CSS</span>
-                  <span class="tech-tag">JavaScript</span>
-                  <span class="tech-tag">Python</span>
-                  <span class="tech-tag">Convolutional Neural Network</span>
-                  <span class="tech-tag">MobileNetv2</span>
+                  <img src="programming_logo/html.webp" alt="HTML" class="tech-logo-img">
+                  <img src="programming_logo/css.png" alt="CSS" class="tech-logo-img">
+                  <img src="programming_logo/javascript.webp" alt="JavaScript" class="tech-logo-img">
+                  <img src="programming_logo/python.png" alt="Python" class="tech-logo-img">
+                  <img src="https://img.shields.io/badge/CNN-FF9900?logo=tensorflow&logoColor=white" alt="CNN" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
+                  <img src="https://img.shields.io/badge/MobileNetV2-00599C?logo=keras&logoColor=white" alt="MobileNetV2" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
               </div>
 
 
+                         
+          </div>
+      </a>
                <!-- Project 7-->
        <a href="https://github.com/Ceilemarie/Water_Quality_Prediction-Using-XGBoost-Random-Forest" target="_blank" rel="noopener noreferrer" class="project-card">
           <div class="project-image-container">
@@ -221,16 +287,18 @@
           <div class="project-details">
               <h3 class="project-title">Water Quality Prediction</h3>
               <span class="project-status completed">Status: Completed</span>
-              <p class="project-desc">A brief description of this completed project and the main objectives.</p>
-            </div>
+              <p class="project-desc">A research project focused on predicting water safety based on physicochemical properties. By comparing different machine learning architectures, the project identifies the most accurate model for ensuring clean water accessibility.</p>
               <div class="project-tech">
-                  <span class="tech-tag">Jupyter Notebook</span>
-                  <span class="tech-tag">XGBoost</span>
-                  <span class="tech-tag">Random Forest  </span>
+                  <img src="programming_logo/google colab.png" alt="Google Colab" class="tech-logo-img">
+                  <img src="https://img.shields.io/badge/XGBoost-1296DB?logo=xgboost&logoColor=white" alt="XGBoost" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
+                  <img src="https://img.shields.io/badge/Random_Forest-4CAF50?logo=scikitlearn&logoColor=white" alt="Random Forest" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
     
               </div>
 
 
+                            
+          </div>
+      </a>
                   <!-- Project 8-->
        <a href="https://github.com/Ceilemarie/Water_Quality_Prediction-Using-XGBoost-Random-Forest" target="_blank" rel="noopener noreferrer" class="project-card">
           <div class="project-image-container">
@@ -239,15 +307,14 @@
           <div class="project-details">
               <h3 class="project-title">Fruit Classification</h3>
               <span class="project-status completed">Status: Ongoing</span>
-              <p class="project-desc">A brief description of this ongoing project and the main objectives.</p>
-            </div>
+              <p class="project-desc">By utilizing Convolutional Neural Networks (CNNs), the application can accurately classify the type of fruit or detect ripen or unripe levels from image datasets.</p>
               <div class="project-tech">
-                  <span class="tech-tag">Jupyter Notebook</span>
-                  <span class="tech-tag">CNN</span>
-                  <span class="tech-tag">MobileNetv2</span>
+                  <img src="programming_logo/google colab.png" alt="Google Colab" class="tech-logo-img">
+                  <img src="https://img.shields.io/badge/CNN-FF9900?logo=tensorflow&logoColor=white" alt="CNN" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
+                  <img src="https://img.shields.io/badge/MobileNetV2-00599C?logo=keras&logoColor=white" alt="MobileNetV2" class="tech-logo-img" style="height:25px; object-fit:contain; border-radius:4px;">
     
-              </div>
-         
+              </div>          
+          </div>
       </a>
 
 
@@ -255,7 +322,7 @@
 </section>
 
  <section id="Certs" class="ctrs">
-    <h1 class="title">Certificates</h1>
+    <h1 class="certs-intro">Certificates</h1>
     <div class="certs-grid">
         <!-- Certificate 1 -->
         <div class="cert-card" onclick="openCertModal(this)">
@@ -319,5 +386,120 @@
     <div id="caption"></div>
 </div>
 
+
+
+<section id="socmed-section" class="socmed-container">
+    <h1 class="socmed-intro">Social Media Manager</h1>
+    <div class="socmed-grid">
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post1.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post2.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post3.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post4.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post5.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post6.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post7.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post8.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post9.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post10.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post11.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post12.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post 13.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post 14.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post 15.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post 16.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post 17.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card" onclick="openSocmedModal(this)" style="cursor: pointer;">
+            <img src="images/post 18.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+    </div>
+</section>
+
+
+
+
+<section id="contact-section" class="contact-container">
+    <h2 class="contact-title">Send me a message</h2>
+    <form class="contact-form" action="https://formsubmit.co/ceile.guce@gmail.com" method="POST">
+        <!-- Optional form config -->
+        <input type="hidden" name="_subject" value="New message from Portfolio!">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="Ceile Guce" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="email">Your Email</label>
+            <input type="email" id="email" name="email" placeholder="ceile.gm@gmail.com" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Your message here..." required></textarea>
+        </div>
+        
+        <button type="submit" class="submit-btn">Send Message</button>
+    </form>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <p>&copy; 2026 Ceile Guce | All rights reserved.</p>
+</footer>
+
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

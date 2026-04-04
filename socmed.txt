@@ -1,0 +1,76 @@
+﻿
+<section id="socmed-section" class="socmed-container">
+    <h1 class="socmed-intro">Social Media Manager</h1>
+    <div class="socmed-grid">
+        <div class="socmed-card">
+            <img src="images/post1.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post2.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post3.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post4.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post5.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post6.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post7.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post8.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post9.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post10.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post11.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post12.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post 13.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post 14.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post 15.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post 16.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post 17.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/post 18.jpg" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/poster1.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/poster2.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/poster3.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/poster4.png" alt="Socmed Post" class="socmed-img">
+        </div>
+        <div class="socmed-card">
+            <img src="images/poster5.png" alt="Socmed Post" class="socmed-img">
+        </div>
+    </div>
+</section>
+
