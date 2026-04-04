@@ -320,7 +320,7 @@ a, span {
 .about-content {
   display: flex;
   gap: 80px; 
-  align-items: center; /* Ensures the picture and the text are vertically centered relative to each other */
+  align-items: flex-start; /* Image stays fixed at top, doesn't move with text */
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
@@ -342,6 +342,7 @@ a, span {
   position: sticky;
   top: 120px;
   height: fit-content;
+  will-change: transform;
 }
 
 .profile-photo {
@@ -386,11 +387,9 @@ a, span {
 }
 
 .project-card {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   width: calc(33.333% - 27px);
   min-width: 320px;
@@ -398,12 +397,14 @@ a, span {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .project-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
 .project-image-container {
@@ -450,16 +451,18 @@ a, span {
 }
 
 .project-status.completed {
-  background-color: #e6f6ee;
-  color: #1b8a4f;
-  border: 1px solid #1b8a4f;
-}
-
-.project-status.ongoing {
-  background-color: #fff3cd;
-  color: #cda81f;
-  border: 1px solid #cda81f;
-}
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #28a745;
+    font-weight: 600;
+  }
+  
+  .project-status.ongoing {
+    background-color: #fff3cd;
+    color: #ff8c00;
+    border: 2px solid #ffc107;
+    font-weight: 600;
+  }
 
 .project-desc {
   font-family: 'Inter', sans-serif;
@@ -698,11 +701,9 @@ a, span {
 }
 
 .cert-card {
-  background: rgba(255, 255, 255, 0.4);
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
-  border: 1px solid rgba(255, 255, 255, 0.7);
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   border-radius: 20px;
   width: calc(33.333% - 27px);
   min-width: 320px;
@@ -710,12 +711,14 @@ a, span {
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.2s ease;
+  will-change: transform;
+  contain: layout style paint;
 }
 
 .cert-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
 }
 
 .cert-image-container {
@@ -771,9 +774,9 @@ a, span {
   width: 100%; /* Full width */
   height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  backdrop-filter: blur(5px);
+  background-color: rgba(0,0,0,0.85);
+  animation: fadeIn 0.2s ease-in;
+  will-change: opacity;
 }
 
 .modal-content {
@@ -782,10 +785,30 @@ a, span {
   max-width: 90%;
   max-height: 80vh;
   object-fit: contain;
-  animation-name: zoom;
-  animation-duration: 0.6s;
+  animation: slideInImage 0.25s ease-out;
   user-select: none; /* Prevent selection */
   -webkit-user-drag: none; /* Prevent dragging */
+  will-change: transform, opacity;
+}
+
+@keyframes slideInImage {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 #caption {
@@ -799,11 +822,6 @@ a, span {
   height: 150px;
   font-family: 'Inter', sans-serif;
   font-size: 20px;
-}
-
-@keyframes zoom {
-  from {transform:scale(0)} 
-  to {transform:scale(1)}
 }
 
 .close {
@@ -1046,12 +1064,13 @@ h1.socmed-intro {
     overflow: hidden;
     border-radius: 15px;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: transform 0.3s ease;
+    will-change: transform;
+    contain: layout style paint;
 }
 
 .socmed-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 .socmed-img {
