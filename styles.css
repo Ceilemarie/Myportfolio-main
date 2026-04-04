@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'lt_perfume';
   src: url('./lt_perfume/LTPerfume-2.ttf');
-  font-display: optional;
+  font-display: block;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
