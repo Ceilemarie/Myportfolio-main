@@ -38,8 +38,8 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 
-  var tabs = ['description', 'education', 'experience', 'skills', 'achievements'];
-  var tabNames = ['Description', 'Education', 'Experience', 'Skills', 'Achievements'];
+  var tabs = ['description', 'education', 'experience', 'achievements'];
+  var tabNames = ['Description', 'Education', 'Experience', 'Achievements'];
   var currentTabIndex = 0;
   var dynamicInfo = document.getElementById('dynamic-info');
   var tabNameSpan = document.getElementById('tab-name');
@@ -112,4 +112,3 @@ function openSocmedModal(element) {
   modalImg.src = img.src;
   captionText.innerHTML = ''; // no caption needed for socmed
 }
-
